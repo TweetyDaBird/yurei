@@ -13,23 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L yurei:Teensy2.0_(C) U1
-U 1 1 5DC6C2E6
-P 5550 8900
-F 0 "U1" H 5550 9937 60  0000 C CNN
-F 1 "Teensy2.0" H 5550 9831 60  0000 C CNN
-F 2 "yurei:Teensy2.0" H 5650 7850 60  0001 C CNN
-F 3 "" H 5650 7850 60  0000 C CNN
-F 4 "https://www.pjrc.com/store/teensy.html" H 5550 8900 50  0001 C CNN "URL"
-	1    5550 8900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4350 9450
-NoConn ~ 4350 9550
-NoConn ~ 4350 9650
-NoConn ~ 6750 8450
-NoConn ~ 6750 8250
+NoConn ~ 9250 9250
+NoConn ~ 9350 9250
+NoConn ~ 9450 9250
+NoConn ~ 9550 9250
+NoConn ~ 8800 7550
 Text GLabel 2000 1400 0    50   Input ~ 0
 Col0
 Text GLabel 2600 1400 0    50   Input ~ 0
@@ -64,226 +52,148 @@ Text GLabel 11000 1400 0    50   Input ~ 0
 Col15
 Text GLabel 11600 1400 0    50   Input ~ 0
 Col16
-$Comp
-L yurei:LED L1
-U 1 1 5E71176E
-P 8600 8350
-F 0 "L1" H 8593 8566 50  0000 C CNN
-F 1 "LED" H 8593 8475 50  0000 C CNN
-F 2 "yurei:LED_D3.0mm" H 8600 8350 50  0001 C CNN
-F 3 "~" H 8600 8350 50  0001 C CNN
-F 4 "https://www.digikey.jp/product-detail/ja/vishay-semiconductor-opto-division/VLHW4100/751-1502-ND/2403143" H 8600 8350 50  0001 C CNN "URL"
-	1    8600 8350
-	1    0    0    -1  
-$EndComp
-$Comp
-L yurei:R R1
-U 1 1 5E71537D
-P 9100 8350
-F 0 "R1" V 8893 8350 50  0000 C CNN
-F 1 "10k" V 8984 8350 50  0000 C CNN
-F 2 "yurei:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9030 8350 50  0001 C CNN
-F 3 "~" H 9100 8350 50  0001 C CNN
-F 4 "https://www.digikey.jp/product-detail/ja/yageo/MFR-25FBF52-10K/10.0KXBK-ND/13219" H 9100 8350 50  0001 C CNN "URL"
-	1    9100 8350
-	0    1    1    0   
-$EndComp
-Text GLabel 9450 8350 2    50   Input ~ 0
-LED1
-Text GLabel 6950 9250 2    50   Input ~ 0
+Text GLabel 11200 8900 2    50   Input ~ 0
 Row0
-Text GLabel 6950 9350 2    50   Input ~ 0
+Text GLabel 11200 9000 2    50   Input ~ 0
 Row1
-Text GLabel 4150 8550 0    50   Input ~ 0
+Text GLabel 8150 8300 0    50   Input ~ 0
 Row2
-Text GLabel 4150 8450 0    50   Input ~ 0
+Text GLabel 8150 8200 0    50   Input ~ 0
 Row3
-Text GLabel 4150 8350 0    50   Input ~ 0
+Text GLabel 8150 8100 0    50   Input ~ 0
 Row4
-Text GLabel 4150 8250 0    50   Input ~ 0
+Text GLabel 8150 8000 0    50   Input ~ 0
 Row5
 Wire Wire Line
-	4150 8250 4350 8250
+	8150 8000 8350 8000
 Wire Wire Line
-	4350 8350 4150 8350
+	8350 8100 8150 8100
 Wire Wire Line
-	4150 8450 4350 8450
+	8150 8200 8350 8200
 Wire Wire Line
-	4350 8550 4150 8550
+	8350 8300 8150 8300
 Wire Wire Line
-	6950 9250 6750 9250
+	11200 8900 11000 8900
 Wire Wire Line
-	6950 9350 6750 9350
-Text GLabel 4150 9350 0    50   Input ~ 0
+	11200 9000 11000 9000
+Text GLabel 8150 9000 0    50   Input ~ 0
 Col0
 Wire Wire Line
-	4150 9350 4350 9350
-Text GLabel 4150 9250 0    50   Input ~ 0
+	8150 9000 8350 9000
+Text GLabel 8150 8900 0    50   Input ~ 0
 Col1
 Wire Wire Line
-	4150 9250 4350 9250
-Text GLabel 4150 9150 0    50   Input ~ 0
+	8150 8900 8350 8900
+Text GLabel 8150 8800 0    50   Input ~ 0
 Col2
-Text GLabel 6950 9650 2    50   Input ~ 0
-Col3
-Text GLabel 4150 8750 0    50   Input ~ 0
+Text GLabel 8150 8400 0    50   Input ~ 0
 Col4
-Text GLabel 6950 8350 2    50   Input ~ 0
+Text GLabel 11200 8000 2    50   Input ~ 0
 Col5
-Text GLabel 6950 8550 2    50   Input ~ 0
+Text GLabel 11200 8100 2    50   Input ~ 0
 Col6
-Text GLabel 6950 8650 2    50   Input ~ 0
+Text GLabel 11200 8200 2    50   Input ~ 0
 Col7
-Text GLabel 6950 8750 2    50   Input ~ 0
+Text GLabel 11200 8300 2    50   Input ~ 0
 Col8
-Text GLabel 6950 8850 2    50   Input ~ 0
+Text GLabel 11200 8600 2    50   Input ~ 0
 Col9
-Text GLabel 6950 8950 2    50   Input ~ 0
+Text GLabel 11200 8700 2    50   Input ~ 0
 Col10
-Text GLabel 6950 9050 2    50   Input ~ 0
+Text GLabel 11200 8800 2    50   Input ~ 0
 Col11
-Text GLabel 6950 9450 2    50   Input ~ 0
+Text GLabel 9850 9450 3    50   Input ~ 0
 Col12
-Text GLabel 6950 9550 2    50   Input ~ 0
+Text GLabel 9750 9450 3    50   Input ~ 0
 Col13
-Text GLabel 4150 8850 0    50   Input ~ 0
+Text GLabel 8150 8500 0    50   Input ~ 0
 Col14
-Text GLabel 4150 8950 0    50   Input ~ 0
+Text GLabel 8150 8600 0    50   Input ~ 0
 Col15
-Text GLabel 4150 9050 0    50   Input ~ 0
+Text GLabel 8150 8700 0    50   Input ~ 0
 Col16
 Wire Wire Line
-	4150 8750 4350 8750
+	8150 8400 8350 8400
 Wire Wire Line
-	4350 8850 4150 8850
+	8350 8500 8150 8500
 Wire Wire Line
-	4150 8950 4350 8950
+	8150 8600 8350 8600
 Wire Wire Line
-	4350 9050 4150 9050
+	8350 8700 8150 8700
 Wire Wire Line
-	4150 9150 4350 9150
+	8150 8800 8350 8800
 Wire Wire Line
-	6750 9450 6950 9450
+	9850 9250 9850 9450
 Wire Wire Line
-	6950 9550 6750 9550
+	9750 9450 9750 9250
 Wire Wire Line
-	6750 9650 6950 9650
+	8350 9100 8150 9100
 Wire Wire Line
-	6950 9050 6750 9050
+	11200 8800 11000 8800
 Wire Wire Line
-	6750 8950 6950 8950
+	11000 8700 11200 8700
 Wire Wire Line
-	6950 8850 6750 8850
+	11200 8600 11000 8600
 Wire Wire Line
-	6750 8750 6950 8750
+	11000 8300 11200 8300
 Wire Wire Line
-	6950 8650 6750 8650
+	11200 8200 11000 8200
 Wire Wire Line
-	6750 8550 6950 8550
+	11000 8100 11200 8100
 Wire Wire Line
-	6950 8350 6750 8350
-Text GLabel 6950 9150 2    50   Input ~ 0
-LED1
-Wire Wire Line
-	6950 9150 6750 9150
-Text GLabel 4150 8650 0    50   Input ~ 0
-LED2
-Text GLabel 8250 8350 0    50   Input ~ 0
-GND
-Text GLabel 4150 8150 0    50   Input ~ 0
+	11200 8000 11000 8000
+Text GLabel 8150 7900 0    50   Input ~ 0
 GND
 Wire Wire Line
-	4150 8150 4350 8150
-Wire Wire Line
-	4350 8650 4150 8650
-Wire Wire Line
-	9450 8350 9250 8350
-Wire Wire Line
-	8950 8350 8750 8350
-Wire Wire Line
-	8450 8350 8250 8350
-$Comp
-L yurei:LED L2
-U 1 1 5EFE6086
-P 8600 8850
-F 0 "L2" H 8593 9066 50  0000 C CNN
-F 1 "LED" H 8593 8975 50  0000 C CNN
-F 2 "yurei:LED_D3.0mm" H 8600 8850 50  0001 C CNN
-F 3 "~" H 8600 8850 50  0001 C CNN
-F 4 "https://www.digikey.jp/product-detail/ja/vishay-semiconductor-opto-division/VLHW4100/751-1502-ND/2403143" H 8600 8850 50  0001 C CNN "URL"
-	1    8600 8850
-	1    0    0    -1  
-$EndComp
-$Comp
-L yurei:R R2
-U 1 1 5EFE608C
-P 9100 8850
-F 0 "R2" V 8893 8850 50  0000 C CNN
-F 1 "10k" V 8984 8850 50  0000 C CNN
-F 2 "yurei:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9030 8850 50  0001 C CNN
-F 3 "~" H 9100 8850 50  0001 C CNN
-F 4 "https://www.digikey.jp/product-detail/ja/yageo/MFR-25FBF52-10K/10.0KXBK-ND/13219" H 9100 8850 50  0001 C CNN "URL"
-	1    9100 8850
-	0    1    1    0   
-$EndComp
-Text GLabel 9450 8850 2    50   Input ~ 0
-LED2
-Text GLabel 8250 8850 0    50   Input ~ 0
-GND
-Wire Wire Line
-	9450 8850 9250 8850
-Wire Wire Line
-	8950 8850 8750 8850
-Wire Wire Line
-	8450 8850 8250 8850
+	8150 7900 8350 7900
 $Comp
 L yurei:PWR_FLAG #FLG0101
 U 1 1 5F1EEAA1
-P 10450 8450
-F 0 "#FLG0101" H 10450 8525 50  0001 C CNN
-F 1 "PWR_FLAG" H 10450 8623 50  0000 C CNN
-F 2 "" H 10450 8450 50  0001 C CNN
-F 3 "~" H 10450 8450 50  0001 C CNN
-	1    10450 8450
+P 14850 9300
+F 0 "#FLG0101" H 14850 9375 50  0001 C CNN
+F 1 "PWR_FLAG" H 14850 9473 50  0000 C CNN
+F 2 "" H 14850 9300 50  0001 C CNN
+F 3 "~" H 14850 9300 50  0001 C CNN
+	1    14850 9300
 	1    0    0    -1  
 $EndComp
 $Comp
 L yurei:GND #PWR0101
 U 1 1 5F1F0866
-P 10450 8650
-F 0 "#PWR0101" H 10450 8400 50  0001 C CNN
-F 1 "GND" H 10455 8477 50  0000 C CNN
-F 2 "" H 10450 8650 50  0001 C CNN
-F 3 "" H 10450 8650 50  0001 C CNN
-	1    10450 8650
+P 14850 9500
+F 0 "#PWR0101" H 14850 9250 50  0001 C CNN
+F 1 "GND" H 14855 9327 50  0000 C CNN
+F 2 "" H 14850 9500 50  0001 C CNN
+F 3 "" H 14850 9500 50  0001 C CNN
+	1    14850 9500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 8450 10450 8650
+	14850 9300 14850 9500
 $Comp
 L yurei:PWR_FLAG #FLG0102
 U 1 1 5F21BE4B
-P 11000 8450
-F 0 "#FLG0102" H 11000 8525 50  0001 C CNN
-F 1 "PWR_FLAG" H 11000 8623 50  0000 C CNN
-F 2 "" H 11000 8450 50  0001 C CNN
-F 3 "~" H 11000 8450 50  0001 C CNN
-	1    11000 8450
+P 15400 9300
+F 0 "#FLG0102" H 15400 9375 50  0001 C CNN
+F 1 "PWR_FLAG" H 15400 9473 50  0000 C CNN
+F 2 "" H 15400 9300 50  0001 C CNN
+F 3 "~" H 15400 9300 50  0001 C CNN
+	1    15400 9300
 	1    0    0    -1  
 $EndComp
 $Comp
 L yurei:VCC #PWR0102
 U 1 1 5F21DC50
-P 11000 8650
-F 0 "#PWR0102" H 11000 8500 50  0001 C CNN
-F 1 "VCC" H 11018 8823 50  0000 C CNN
-F 2 "" H 11000 8650 50  0001 C CNN
-F 3 "" H 11000 8650 50  0001 C CNN
-	1    11000 8650
+P 15400 9500
+F 0 "#PWR0102" H 15400 9350 50  0001 C CNN
+F 1 "VCC" H 15418 9673 50  0000 C CNN
+F 2 "" H 15400 9500 50  0001 C CNN
+F 3 "" H 15400 9500 50  0001 C CNN
+	1    15400 9500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	11000 8450 11000 8650
+	15400 9300 15400 9500
 Connection ~ 11000 5100
 Connection ~ 11000 3500
 Wire Wire Line
@@ -3157,14 +3067,157 @@ F0 "Sheet60149CD6" 50
 F1 "file60149CD6.sch" 50
 $EndSheet
 $Comp
-L Keyboard_Library:Core51822B U3
-U 1 1 5FFFEB62
-P 14650 4150
-F 0 "U3" H 14650 5037 60  0000 C CNN
-F 1 "Core51822B" H 14650 4931 60  0000 C CNN
-F 2 "Keyboard Library:Core51822(B)" H 14650 4250 60  0001 C CNN
-F 3 "" H 14650 4250 60  0001 C CNN
-	1    14650 4150
+L Keyboard_Library:HolyIOT-18010-nRF52840 RF1
+U 1 1 601C1C2B
+P 9700 8200
+F 0 "RF1" H 11044 8046 50  0000 L CNN
+F 1 "HolyIOT-18010-nRF52840" H 11044 7955 50  0000 L CNN
+F 2 "Keyboard Library:HolyIOT-18010-nRF52840" H 9350 8150 50  0001 C CNN
+F 3 "" H 9350 8150 50  0001 C CNN
+	1    9700 8200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Keyboard_Library:TP4056_1A_Charge U5
+U 1 1 601B34D1
+P 1500 7700
+F 0 "U5" H 1728 7746 50  0000 L CNN
+F 1 "TP4056_1A_Charge" H 1728 7655 50  0000 L CNN
+F 2 "Keyboard Library:T4056 1A Charge" H 1500 7950 50  0001 C CNN
+F 3 "" H 1500 7950 50  0001 C CNN
+	1    1500 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 6034497A
+P 950 7450
+F 0 "#PWR0113" H 950 7200 50  0001 C CNN
+F 1 "GND" H 955 7277 50  0000 C CNN
+F 2 "" H 950 7450 50  0001 C CNN
+F 3 "" H 950 7450 50  0001 C CNN
+	1    950  7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Plug_USB2.0 P1
+U 1 1 6036490B
+P 14800 4100
+F 0 "P1" H 14907 4967 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 14907 4876 50  0000 C CNN
+F 2 "Keyboard Library:HRO-TYPE-C-31-M-12-Assembly" H 14950 4100 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 14950 4100 50  0001 C CNN
+	1    14800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:MBRS130LT3G D88
+U 1 1 603982EB
+P 3000 7450
+F 0 "D88" H 2772 7404 50  0000 R CNN
+F 1 "MBRS130LT3G" H 2772 7495 50  0000 R CNN
+F 2 "DIOM5436X247N" H 3450 7450 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MBRS130LT3-D.PDF" H 3450 7350 50  0001 L CNN
+F 4 "ON SEMICONDUCTOR - MBRS130LT3G - Schottky Rectifier, 30 V, 1 A, Single, DO-214AA (SMB), 2 Pins, 395 mV" H 3450 7250 50  0001 L CNN "Description"
+F 5 "2.47" H 3450 7150 50  0001 L CNN "Height"
+F 6 "863-MBRS130LT3G" H 3450 7050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MBRS130LT3G/?qs=3JMERSakebphHr1IwQ7oWw%3D%3D" H 3450 6950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 3450 6850 50  0001 L CNN "Manufacturer_Name"
+F 9 "MBRS130LT3G" H 3450 6750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3000 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 604427CE
+P 700 8000
+F 0 "R7" H 759 8046 50  0000 L CNN
+F 1 "100k" H 759 7955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 700 8000 50  0001 C CNN
+F 3 "~" H 700 8000 50  0001 C CNN
+	1    700  8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 8250 700  8250
+Wire Wire Line
+	700  8250 700  8100
+Wire Wire Line
+	700  7900 700  7750
+Wire Wire Line
+	700  7750 2050 7750
+Wire Wire Line
+	2050 7750 2050 7450
+Text GLabel 1600 8250 3    50   Input ~ 0
+Batt+
+Text GLabel 1400 8250 3    50   Input ~ 0
+Batt-
+Text GLabel 1300 8250 3    50   Input ~ 0
+Load-
+Text GLabel 5550 8600 3    50   Input ~ 0
+Load+
+Wire Wire Line
+	2400 7450 2300 7450
+Connection ~ 2050 7450
+Connection ~ 2300 7450
+Wire Wire Line
+	2300 7450 2050 7450
+$Comp
+L SamacSys_Parts:DMP1045U-7 IC1
+U 1 1 6052B61A
+P 3850 7700
+F 0 "IC1" H 4250 7965 50  0000 C CNN
+F 1 "DMP1045U-7" H 4250 7874 50  0000 C CNN
+F 2 "SOT96P240X120-3N" H 4500 7800 50  0001 L CNN
+F 3 "" H 4500 7700 50  0001 L CNN
+F 4 "P-Channel Enhancement MOSFET SOT-23 Diodes Inc DMP1045U-7 P-channel MOSFET Transistor, 5.2 A, -12 V, 3-Pin SOT23" H 4500 7600 50  0001 L CNN "Description"
+F 5 "1.2" H 4500 7500 50  0001 L CNN "Height"
+F 6 "621-DMP1045U-7" H 4500 7400 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP1045U-7/?qs=T%2FOtf55vL7eEKnIWhgMvTQ%3D%3D" H 4500 7300 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 4500 7200 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMP1045U-7" H 4500 7100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3850 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 7700 4650 8250
+Wire Wire Line
+	4650 8250 1700 8250
+Wire Wire Line
+	3850 7700 2300 7700
+Wire Wire Line
+	2300 7450 2300 7700
+Wire Wire Line
+	3850 7800 3850 8050
+Wire Wire Line
+	3850 8050 5200 8050
+Wire Wire Line
+	5200 8050 5200 8600
+Wire Wire Line
+	5200 8600 5550 8600
+Wire Wire Line
+	3000 7450 5200 7450
+Wire Wire Line
+	5200 7450 5200 8050
+Connection ~ 5200 8050
+Text GLabel 8150 9100 0    50   Input ~ 0
+Col3
+NoConn ~ 8900 7550
+NoConn ~ 9000 7550
+NoConn ~ 9100 7550
+NoConn ~ 9200 7550
+NoConn ~ 9300 7550
+NoConn ~ 9400 7550
+NoConn ~ 9500 7550
+NoConn ~ 9600 7550
+NoConn ~ 9800 7550
+NoConn ~ 9900 7550
+NoConn ~ 10000 7550
+NoConn ~ 10100 7550
+NoConn ~ 10200 7550
+NoConn ~ 10300 7550
+NoConn ~ 10400 7550
+NoConn ~ 10500 7550
+NoConn ~ 10600 7550
+NoConn ~ 9650 9250
 $EndSCHEMATC
