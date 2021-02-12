@@ -1,0 +1,1652 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 60576729
+P 8350 3450
+F 0 "Y1" V 8304 3694 50  0000 L CNN
+F 1 "NX2520SA-16MHZ-STD-CSW-5" V 8395 3694 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 9800 3550 50  0001 L CNN
+F 3 "https://www.ndk.com/images/products/catalog/c_NX2520SA-STD-CSW-5_e.pdf" H 9800 3450 50  0001 L CNN
+F 4 "NDK 16MHz Crystal Unit +/-15ppm SMD 4-Pin 2.5 x 2 x 0.5mm" H 9800 3350 50  0001 L CNN "Description"
+F 5 "" H 9800 3250 50  0001 L CNN "Height"
+F 6 "344-NX2520SA16MCSW5" H 9800 3150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/NDK/NX2520SA-16MHZ-STD-CSW-5?qs=55YtniHzbhCW9opBWU2Ikg%3D%3D" H 9800 3050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Yangxing Tech" H 9800 2950 50  0001 L CNN "Manufacturer_Name"
+F 9 "X322516MLB4SI" H 9800 2850 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "Basic" H 8350 3450 50  0001 C CNN "Basic/Extended"
+F 11 "C13738" H 8350 3450 50  0001 C CNN "JLPCB Part #"
+	1    8350 3450
+	0    1    1    0   
+$EndComp
+NoConn ~ 10500 4750
+NoConn ~ 10500 4650
+$Comp
+L Device:Antenna_Shield AE1
+U 1 1 5FE94410
+P 6100 2300
+F 0 "AE1" H 6180 2289 50  0000 L CNN
+F 1 "Antenna" H 6180 2198 50  0000 L CNN
+F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Right" H 6100 2300 50  0001 C CNN
+F 3 "~" H 6100 2300 50  0001 C CNN
+	1    6100 2300
+	-1   0    0    -1  
+$EndComp
+Text Label 6100 2500 0    50   ~ 0
+ANT
+Connection ~ 6300 2500
+Wire Wire Line
+	6300 2850 7000 2850
+Wire Wire Line
+	6850 2500 6700 2500
+Wire Wire Line
+	7250 2500 7250 2600
+Wire Wire Line
+	7250 2800 7250 2850
+Connection ~ 7250 2500
+Wire Wire Line
+	7250 2500 7150 2500
+Wire Wire Line
+	7550 2500 7250 2500
+$Comp
+L Device:C_Small C4
+U 1 1 601F0CD2
+P 7250 2700
+F 0 "C4" H 7342 2746 50  0000 L CNN
+F 1 "1pF" H 7342 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7250 2700 50  0001 C CNN
+F 3 "~" H 7250 2700 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 7250 2700 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402CG1R0C500NT" H 7250 2700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 7250 2700 50  0001 C CNN "Basic/Extended"
+F 7 "C1550" H 7250 2700 50  0001 C CNN "JLPCB Part #"
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2500 7750 2500
+Wire Wire Line
+	7350 2200 7600 2200
+Text GLabel 7350 2200 0    50   Input ~ 0
+VVD_PA
+Connection ~ 8050 2500
+Wire Wire Line
+	8600 2200 8050 2200
+Wire Wire Line
+	8600 2250 8600 2200
+Wire Wire Line
+	8700 2250 8600 2250
+$Comp
+L Device:L L1
+U 1 1 6022A7BC
+P 8050 2350
+F 0 "L1" V 7869 2350 50  0000 C CNN
+F 1 "4.7nH" V 7960 2350 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 8050 2350 50  0001 C CNN
+F 3 "~" H 8050 2350 50  0001 C CNN
+F 4 "Sunlord" H 8050 2350 50  0001 C CNN "Manufacturer_Name"
+F 5 "SDCL1005C4N7STDF" H 8050 2350 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8050 2350 50  0001 C CNN "Basic/Extended"
+F 7 "C13595" H 8050 2350 50  0001 C CNN "JLPCB Part #"
+	1    8050 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 601496E4
+P 8550 5300
+F 0 "#PWR0123" H 8550 5050 50  0001 C CNN
+F 1 "GND" H 8555 5127 50  0000 C CNN
+F 2 "" H 8550 5300 50  0001 C CNN
+F 3 "" H 8550 5300 50  0001 C CNN
+	1    8550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4900 8550 5300
+Wire Wire Line
+	8550 4550 8700 4550
+Connection ~ 8550 4550
+Wire Wire Line
+	8550 4700 8550 4550
+Wire Wire Line
+	8250 4550 8550 4550
+Wire Wire Line
+	8050 1650 8450 1650
+Connection ~ 8050 1650
+Wire Wire Line
+	8050 1600 8050 1650
+Wire Wire Line
+	7650 1650 7900 1650
+Connection ~ 7650 1650
+Wire Wire Line
+	7250 1650 7650 1650
+Wire Wire Line
+	7650 1600 7650 1650
+Connection ~ 7900 1650
+Wire Wire Line
+	8450 1650 8450 1600
+Wire Wire Line
+	7900 1650 8050 1650
+Wire Wire Line
+	7250 1600 7250 1650
+$Comp
+L power:GND #PWR0107
+U 1 1 601FCECF
+P 7900 1650
+F 0 "#PWR0107" H 7900 1400 50  0001 C CNN
+F 1 "GND" H 7905 1477 50  0000 C CNN
+F 2 "" H 7900 1650 50  0001 C CNN
+F 3 "" H 7900 1650 50  0001 C CNN
+	1    7900 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 1200
+Wire Wire Line
+	7250 1200 7650 1200
+Wire Wire Line
+	7250 1400 7250 1200
+Wire Wire Line
+	9600 1200 9600 1650
+Wire Wire Line
+	7650 1200 8250 1200
+Wire Wire Line
+	7650 1400 7650 1200
+Wire Wire Line
+	9400 1300 8050 1300
+Wire Wire Line
+	9300 1400 8450 1400
+Wire Wire Line
+	2500 2000 2500 1850
+$Comp
+L power:GND #PWR0120
+U 1 1 5FF11F1C
+P 2000 2100
+F 0 "#PWR0120" H 2000 1850 50  0001 C CNN
+F 1 "GND" H 2005 1927 50  0000 C CNN
+F 2 "" H 2000 2100 50  0001 C CNN
+F 3 "" H 2000 2100 50  0001 C CNN
+	1    2000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1550 2950 1550
+Connection ~ 2500 1550
+Wire Wire Line
+	2500 1550 2500 1650
+$Comp
+L Device:C_Small C14
+U 1 1 5FF0D746
+P 2500 1750
+F 0 "C14" H 2592 1796 50  0000 L CNN
+F 1 "1uF" H 2592 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 1750 50  0001 C CNN
+F 3 "~" H 2500 1750 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 2500 1750 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10A105KB8NNNC" H 2500 1750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 2500 1750 50  0001 C CNN "Basic/Extended"
+F 7 "C15849" H 2500 1750 50  0001 C CNN "JLPCB Part #"
+	1    2500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1850 1450 2000
+Wire Wire Line
+	1450 1550 1450 1650
+$Comp
+L Device:C_Small C15
+U 1 1 5FEE7F6A
+P 1450 1750
+F 0 "C15" H 1542 1796 50  0000 L CNN
+F 1 "1uF" H 1542 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 1750 50  0001 C CNN
+F 3 "~" H 1450 1750 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 1450 1750 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10A105KB8NNNC" H 1450 1750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 1450 1750 50  0001 C CNN "Basic/Extended"
+F 7 "C15849" H 1450 1750 50  0001 C CNN "JLPCB Part #"
+	1    1450 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 3550 2    50   Input ~ 0
+P015
+$Comp
+L power:GND #PWR0103
+U 1 1 5FED3417
+P 1750 7400
+F 0 "#PWR0103" H 1750 7150 50  0001 C CNN
+F 1 "GND" H 1755 7227 50  0000 C CNN
+F 2 "" H 1750 7400 50  0001 C CNN
+F 3 "" H 1750 7400 50  0001 C CNN
+	1    1750 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 6500 2    50   Input ~ 0
+P015
+Text GLabel 2450 6700 2    50   Input ~ 0
+P013
+NoConn ~ 10500 4050
+$Comp
+L power:GND #PWR0111
+U 1 1 5FF98878
+P 8550 3450
+F 0 "#PWR0111" H 8550 3200 50  0001 C CNN
+F 1 "GND" H 8555 3277 50  0000 C CNN
+F 2 "" H 8550 3450 50  0001 C CNN
+F 3 "" H 8550 3450 50  0001 C CNN
+	1    8550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3450 7900 3150
+Connection ~ 7900 3450
+Wire Wire Line
+	8150 3450 7900 3450
+Text GLabel 2450 6600 2    50   Input ~ 0
+P014
+Text GLabel 10500 3350 2    50   Input ~ 0
+P014
+Text GLabel 10500 2850 2    50   Input ~ 0
+P09
+Text GLabel 10500 2250 2    50   Input ~ 0
+P03
+Text GLabel 2450 7100 2    50   Input ~ 0
+P09
+Text GLabel 2450 7000 2    50   Input ~ 0
+P010
+Text GLabel 2450 6900 2    50   Input ~ 0
+P011
+Text GLabel 2450 6800 2    50   Input ~ 0
+P012
+$Comp
+L MCU_Nordic:nRF51x22-QFxx U1
+U 1 1 6006868D
+P 9600 3450
+F 0 "U1" H 9600 2250 50  0000 C CNN
+F 1 "nRF51x22-QFxx" H 9550 2150 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm_ThermalVias" H 9600 3450 50  0001 C CNN
+F 3 "http://infocenter.nordicsemi.com/pdf/nRF51822_PS_v3.3.pdf" H 9200 3350 50  0001 C CNN
+F 4 "Nordic Semiconductor" H 9600 3450 50  0001 C CNN "Manufacturer_Name"
+F 5 "NRF51822-QFAC-R" H 9600 3450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Extended" H 9600 3450 50  0001 C CNN "Basic/Extended"
+F 7 "C267287" H 9600 3450 50  0001 C CNN "JLPCB Part #"
+	1    9600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0122
+U 1 1 6044D6ED
+P 8250 1100
+F 0 "#PWR0122" H 8250 950 50  0001 C CNN
+F 1 "VCC" H 8265 1273 50  0000 C CNN
+F 2 "" H 8250 1100 50  0001 C CNN
+F 3 "" H 8250 1100 50  0001 C CNN
+	1    8250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 6043474E
+P 7650 2500
+F 0 "C5" V 7750 2550 50  0000 L CNN
+F 1 "3.9pF" V 7850 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7650 2500 50  0001 C CNN
+F 3 "~" H 7650 2500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7650 2500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL05C3R9CB5NNNC" H 7650 2500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Extended" H 7650 2500 50  0001 C CNN "Basic/Extended"
+F 7 "C48151" H 7650 2500 50  0001 C CNN "JLPCB Part #"
+	1    7650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 6042523B
+P 9350 850
+F 0 "C3" H 9500 900 50  0000 C CNN
+F 1 "2.2nF" H 9550 800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9350 850 50  0001 C CNN
+F 3 "~" H 9350 850 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 9350 850 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402B222K500NT" H 9350 850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 9350 850 50  0001 C CNN "Basic/Extended"
+F 7 "C1531" H 9350 850 50  0001 C CNN "JLPCB Part #"
+	1    9350 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 750  0    50   Input ~ 0
+VVD_PA
+$Comp
+L Device:L L3
+U 1 1 603A7633
+P 7000 2500
+F 0 "L3" V 6819 2500 50  0000 C CNN
+F 1 "3.3nH" V 6910 2500 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 7000 2500 50  0001 C CNN
+F 3 "~" H 7000 2500 50  0001 C CNN
+F 4 "Taiyo Yuden" H 7000 2500 50  0001 C CNN "Manufacturer_Name"
+F 5 "HK10053N3S-T" H 7000 2500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Extended" H 7000 2500 50  0001 C CNN "Basic/Extended"
+F 7 "C87179" H 7000 2500 50  0001 C CNN "JLPCB Part #"
+	1    7000 2500
+	0    -1   1    0   
+$EndComp
+Text GLabel 10500 3250 2    50   Input ~ 0
+P013
+Text GLabel 1150 6000 0    50   Input ~ 0
+P021
+Text GLabel 1150 6100 0    50   Input ~ 0
+P022
+Wire Wire Line
+	8050 3150 7900 3150
+Connection ~ 8350 3750
+Wire Wire Line
+	8250 3750 8350 3750
+Wire Wire Line
+	7900 3750 7900 3450
+Connection ~ 7900 3750
+$Comp
+L power:GND #PWR0119
+U 1 1 602CCC77
+P 7900 3750
+F 0 "#PWR0119" H 7900 3500 50  0001 C CNN
+F 1 "GND" H 7905 3577 50  0000 C CNN
+F 2 "" H 7900 3750 50  0001 C CNN
+F 3 "" H 7900 3750 50  0001 C CNN
+	1    7900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3750 7900 3750
+Connection ~ 8350 3150
+Wire Wire Line
+	8350 3150 8250 3150
+$Comp
+L Device:C_Small C2
+U 1 1 602C6029
+P 8150 3750
+F 0 "C2" V 7921 3750 50  0000 C CNN
+F 1 "12pF" V 8012 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8150 3750 50  0001 C CNN
+F 3 "~" H 8150 3750 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 8150 3750 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402CG120J500NT" H 8150 3750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8150 3750 50  0001 C CNN "Basic/Extended"
+F 7 "C1547" H 8150 3750 50  0001 C CNN "JLPCB Part #"
+	1    8150 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 3600 8350 3750
+$Comp
+L Device:C_Small C1
+U 1 1 602AABC9
+P 8150 3150
+F 0 "C1" V 7921 3150 50  0000 C CNN
+F 1 "12pF" V 8012 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8150 3150 50  0001 C CNN
+F 3 "~" H 8150 3150 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 8150 3150 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402CG120J500NT" H 8150 3150 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8150 3150 50  0001 C CNN "Basic/Extended"
+F 7 "C1547" H 8150 3150 50  0001 C CNN "JLPCB Part #"
+	1    8150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 6028E50B
+P 7650 1500
+F 0 "C7" H 7742 1546 50  0000 L CNN
+F 1 "4.7uF" H 7742 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 1500 50  0001 C CNN
+F 3 "~" H 7650 1500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7650 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10A475KO8NNNC" H 7650 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 7650 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C19666" H 7650 1500 50  0001 C CNN "JLPCB Part #"
+	1    7650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 60265B48
+P 8450 1500
+F 0 "C8" H 8542 1546 50  0000 L CNN
+F 1 "100nF" H 8542 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8450 1500 50  0001 C CNN
+F 3 "~" H 8450 1500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 8450 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL05B104KO5NNNC" H 8450 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8450 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C1525" H 8450 1500 50  0001 C CNN "JLPCB Part #"
+	1    8450 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9600 5300
+Wire Wire Line
+	9700 5300 9600 5300
+Wire Wire Line
+	9700 5250 9700 5300
+Wire Wire Line
+	9600 5250 9600 5300
+$Comp
+L Device:L L2
+U 1 1 6022B295
+P 7750 2200
+F 0 "L2" V 7569 2200 50  0000 C CNN
+F 1 "27nH" V 7660 2200 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 7750 2200 50  0001 C CNN
+F 3 "~" H 7750 2200 50  0001 C CNN
+F 4 "Sunlord" H 7750 2200 50  0001 C CNN "Manufacturer_Name"
+F 5 "SDCL1005C27NJTDF" H 7750 2200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 7750 2200 50  0001 C CNN "Basic/Extended"
+F 7 "C18830" H 7750 2200 50  0001 C CNN "JLPCB Part #"
+	1    7750 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 1650 9300 1400
+$Comp
+L Device:C_Small C11
+U 1 1 6020C7A4
+P 7250 1500
+F 0 "C11" H 7342 1546 50  0000 L CNN
+F 1 "100nF" H 7342 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7250 1500 50  0001 C CNN
+F 3 "~" H 7250 1500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7250 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL05B104KO5NNNC" H 7250 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 7250 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C1525" H 7250 1500 50  0001 C CNN "JLPCB Part #"
+	1    7250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1300 8050 1400
+Wire Wire Line
+	9400 1650 9400 1300
+$Comp
+L Device:C_Small C10
+U 1 1 601F1E9E
+P 8050 1500
+F 0 "C10" H 8142 1546 50  0000 L CNN
+F 1 "47nF" H 8142 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8050 1500 50  0001 C CNN
+F 3 "~" H 8050 1500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 8050 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10B473KB8NNNC" H 8050 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8050 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C1622" H 8050 1500 50  0001 C CNN "JLPCB Part #"
+	1    8050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 601A25D6
+P 10100 6150
+F 0 "#PWR0116" H 10100 5900 50  0001 C CNN
+F 1 "GND" H 10105 5977 50  0000 C CNN
+F 2 "" H 10100 6150 50  0001 C CNN
+F 3 "" H 10100 6150 50  0001 C CNN
+	1    10100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6019E77A
+P 10100 6150
+F 0 "#FLG0102" H 10100 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 10100 6323 50  0000 C CNN
+F 2 "" H 10100 6150 50  0001 C CNN
+F 3 "~" H 10100 6150 50  0001 C CNN
+	1    10100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1550 2500 1550
+$Comp
+L power:VCC #PWR0109
+U 1 1 60123268
+P 2550 6300
+F 0 "#PWR0109" H 2550 6150 50  0001 C CNN
+F 1 "VCC" V 2565 6427 50  0000 L CNN
+F 2 "" H 2550 6300 50  0001 C CNN
+F 3 "" H 2550 6300 50  0001 C CNN
+	1    2550 6300
+	0    1    -1   0   
+$EndComp
+NoConn ~ 10500 3950
+NoConn ~ 10500 3850
+Wire Wire Line
+	8350 3150 8350 3300
+Wire Wire Line
+	8700 3750 8350 3750
+Wire Wire Line
+	8700 3150 8350 3150
+Text GLabel 10500 4150 2    50   Input ~ 0
+P021
+Text GLabel 10500 4250 2    50   Input ~ 0
+P022
+Text GLabel 10500 4450 2    50   Input ~ 0
+P024
+Text GLabel 10500 4550 2    50   Input ~ 0
+P025
+Text GLabel 10500 2050 2    50   Input ~ 0
+P01
+Text GLabel 10500 2150 2    50   Input ~ 0
+P02
+Text GLabel 10500 1950 2    50   Input ~ 0
+P00
+Text GLabel 10500 3150 2    50   Input ~ 0
+P012
+Text GLabel 10500 3050 2    50   Input ~ 0
+P011
+Text GLabel 10500 2950 2    50   Input ~ 0
+P010
+Wire Wire Line
+	1050 6300 1050 6250
+$Comp
+L power:GND #PWR0104
+U 1 1 6007F476
+P 1050 6250
+F 0 "#PWR0104" H 1050 6000 50  0001 C CNN
+F 1 "GND" H 1055 6077 50  0000 C CNN
+F 2 "" H 1050 6250 50  0001 C CNN
+F 3 "" H 1050 6250 50  0001 C CNN
+	1    1050 6250
+	0    1    -1   0   
+$EndComp
+Text GLabel 2450 6000 2    50   Input ~ 0
+RAW
+Wire Wire Line
+	2550 6300 2450 6300
+Text GLabel 2050 7400 2    50   Input ~ 0
+SWDCLK
+Text GLabel 2450 6200 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	8700 4450 8250 4450
+Text GLabel 8250 4550 0    50   Input ~ 0
+SWDCLK
+Text GLabel 8250 4450 0    50   Input ~ 0
+SWDIO
+$Comp
+L power:GND #PWR0118
+U 1 1 5FFA35DB
+P 6000 2600
+F 0 "#PWR0118" H 6000 2350 50  0001 C CNN
+F 1 "GND" H 6005 2427 50  0000 C CNN
+F 2 "" H 6000 2600 50  0001 C CNN
+F 3 "" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 6000 6700 6000
+$Comp
+L power:GND #PWR0125
+U 1 1 60323DA0
+P 6600 6250
+F 0 "#PWR0125" H 6600 6000 50  0001 C CNN
+F 1 "GND" H 6605 6077 50  0000 C CNN
+F 2 "" H 6600 6250 50  0001 C CNN
+F 3 "" H 6600 6250 50  0001 C CNN
+	1    6600 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0126
+U 1 1 60325422
+P 6600 5750
+F 0 "#PWR0126" H 6600 5600 50  0001 C CNN
+F 1 "VCC" H 6615 5923 50  0000 C CNN
+F 2 "" H 6600 5750 50  0001 C CNN
+F 3 "" H 6600 5750 50  0001 C CNN
+	1    6600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 6033830F
+P 5850 6000
+F 0 "JP1" V 5804 6102 50  0000 L CNN
+F 1 "Jumper_Dual" V 5895 6102 50  0000 L CNN
+F 2 "Keyboard Library:SolderJumper-3_mini" H 5850 6000 50  0001 C CNN
+F 3 "~" H 5850 6000 50  0001 C CNN
+	1    5850 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 60338316
+P 5850 6250
+F 0 "#PWR0127" H 5850 6000 50  0001 C CNN
+F 1 "GND" H 5855 6077 50  0000 C CNN
+F 2 "" H 5850 6250 50  0001 C CNN
+F 3 "" H 5850 6250 50  0001 C CNN
+	1    5850 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0128
+U 1 1 6033831C
+P 5850 5750
+F 0 "#PWR0128" H 5850 5600 50  0001 C CNN
+F 1 "VCC" H 5865 5923 50  0000 C CNN
+F 2 "" H 5850 5750 50  0001 C CNN
+F 3 "" H 5850 5750 50  0001 C CNN
+	1    5850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP2
+U 1 1 6034288B
+P 6600 6000
+F 0 "JP2" V 6554 6102 50  0000 L CNN
+F 1 "Jumper_Dual" V 6645 6102 50  0000 L CNN
+F 2 "Keyboard Library:SolderJumper-3_mini" H 6600 6000 50  0001 C CNN
+F 3 "~" H 6600 6000 50  0001 C CNN
+	1    6600 6000
+	0    -1   1    0   
+$EndComp
+$Comp
+L Keyboard_Library:Gazell-PM U2
+U 1 1 60348B02
+P 1750 6550
+F 0 "U2" H 1825 7387 60  0000 C CNN
+F 1 "Gazell-PM" H 1825 7281 60  0000 C CNN
+F 2 "Keyboard Library:Gazelle-PM" V 2800 4050 60  0001 C CNN
+F 3 "" V 2800 4050 60  0001 C CNN
+	1    1750 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 3650 2    50   Input ~ 0
+P016
+Text GLabel 2450 6400 2    50   Input ~ 0
+P016
+Wire Wire Line
+	5650 6000 5750 6000
+$Comp
+L Device:LED LED2
+U 1 1 603AD476
+P 4450 5900
+F 0 "LED2" H 4443 5645 50  0000 C CNN
+F 1 "LED" H 4443 5736 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4450 5900 50  0001 C CNN
+F 3 "~" H 4450 5900 50  0001 C CNN
+F 4 "" H 4450 5900 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4450 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 603B1B3D
+P 4100 5900
+F 0 "R3" H 4159 5946 50  0000 L CNN
+F 1 "10K" H 4159 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4100 5900 50  0001 C CNN
+F 3 "~" H 4100 5900 50  0001 C CNN
+F 4 "Uniroyal Elec" H 4100 5900 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF1002TCE" H 4100 5900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 4100 5900 50  0001 C CNN "Basic/Extended"
+F 7 "C25744" H 4100 5900 50  0001 C CNN "JLPCB Part #"
+	1    4100 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 5900 4250 5900
+$Comp
+L Device:LED LED1
+U 1 1 603B3BAF
+P 4450 6200
+F 0 "LED1" H 4443 5945 50  0000 C CNN
+F 1 "LED" H 4443 6036 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4450 6200 50  0001 C CNN
+F 3 "~" H 4450 6200 50  0001 C CNN
+F 4 "19-217/GHC-YR1S2/3T" H 4450 6200 50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "Basic" H 4450 6200 50  0001 C CNN "Basic/Extended"
+F 6 "C72043" H 4450 6200 50  0001 C CNN "JLPCB Part #"
+F 7 "Everlight Elec" H 4450 6200 50  0001 C CNN "Manufacturer_Name"
+	1    4450 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5900 4800 5900
+Wire Wire Line
+	4800 5900 4800 6200
+Wire Wire Line
+	4800 6200 4600 6200
+$Comp
+L power:GND #PWR0129
+U 1 1 603C4925
+P 4800 6200
+F 0 "#PWR0129" H 4800 5950 50  0001 C CNN
+F 1 "GND" H 4805 6027 50  0000 C CNN
+F 2 "" H 4800 6200 50  0001 C CNN
+F 3 "" H 4800 6200 50  0001 C CNN
+	1    4800 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 6200
+$Comp
+L Device:R_Small R6
+U 1 1 60140209
+P 6000 7300
+F 0 "R6" H 6059 7346 50  0000 L CNN
+F 1 "2M2" H 6059 7255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 7300 50  0001 C CNN
+F 3 "~" H 6000 7300 50  0001 C CNN
+F 4 "Uniroyal Elec" H 6000 7300 50  0001 C CNN "Manufacturer_Name"
+F 5 "0603WAF2204T5E" H 6000 7300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 6000 7300 50  0001 C CNN "Basic/Extended"
+F 7 "C22938" H 6000 7300 50  0001 C CNN "JLPCB Part #"
+	1    6000 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 60141E42
+P 6350 7300
+F 0 "C16" H 6442 7346 50  0000 L CNN
+F 1 "22nF" H 6442 7255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6350 7300 50  0001 C CNN
+F 3 "~" H 6350 7300 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 6350 7300 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402B223K500NT" H 6350 7300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 6350 7300 50  0001 C CNN "Basic/Extended"
+F 7 "C1532" H 6350 7300 50  0001 C CNN "JLPCB Part #"
+	1    6350 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7400 6350 7400
+Wire Wire Line
+	6350 7100 6000 7100
+Wire Wire Line
+	6350 7100 6350 7200
+Connection ~ 6000 7100
+Wire Wire Line
+	6000 7100 6000 7200
+Wire Wire Line
+	6350 7100 6450 7100
+Connection ~ 6350 7100
+Wire Wire Line
+	6350 7400 6350 7450
+Connection ~ 6350 7400
+$Comp
+L power:GND #PWR02
+U 1 1 6016CF72
+P 6350 7450
+F 0 "#PWR02" H 6350 7200 50  0001 C CNN
+F 1 "GND" H 6355 7277 50  0000 C CNN
+F 2 "" H 6350 7450 50  0001 C CNN
+F 3 "" H 6350 7450 50  0001 C CNN
+	1    6350 7450
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 2550 2    50   Input ~ 0
+BAT_MON
+Text GLabel 6450 7100 2    50   Input ~ 0
+BAT_MON
+Wire Wire Line
+	4250 5900 4250 6200
+Wire Wire Line
+	4250 6200 4300 6200
+Connection ~ 4250 5900
+Wire Wire Line
+	4250 5900 4300 5900
+$Comp
+L Keyboard_Library:LN2054 U3
+U 1 1 6030DF51
+P 2250 3400
+F 0 "U3" H 2250 3865 50  0000 C CNN
+F 1 "LN2054" H 2250 3774 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2200 3550 50  0001 C CNN
+F 3 "" H 2200 3550 50  0001 C CNN
+F 4 "Extended" H 2250 3400 50  0001 C CNN "Basic/Extended"
+F 5 "C141406" H 2250 3400 50  0001 C CNN "JLPCB Part #"
+F 6 "NATLINEAR" H 2250 3400 50  0001 C CNN "Manufacturer_Name"
+F 7 "LN2054Y42AMR" H 2250 3400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 60311032
+P 2650 3600
+F 0 "R9" H 2709 3646 50  0000 L CNN
+F 1 "10K" H 2709 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2650 3600 50  0001 C CNN
+F 3 "~" H 2650 3600 50  0001 C CNN
+F 4 "Uniroyal Elec" H 2650 3600 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF1002TCE" H 2650 3600 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 2650 3600 50  0001 C CNN "Basic/Extended"
+F 7 "C25744" H 2650 3600 50  0001 C CNN "JLPCB Part #"
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3400 2650 3400
+Wire Wire Line
+	2650 3400 2650 3500
+Wire Wire Line
+	2650 3700 2650 3800
+Wire Wire Line
+	2650 3800 2350 3800
+Wire Wire Line
+	2350 3800 2350 3850
+Connection ~ 2350 3800
+$Comp
+L power:GND #PWR0130
+U 1 1 60325BCD
+P 2350 3850
+F 0 "#PWR0130" H 2350 3600 50  0001 C CNN
+F 1 "GND" H 2355 3677 50  0000 C CNN
+F 2 "" H 2350 3850 50  0001 C CNN
+F 3 "" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 6032D7A1
+P 1800 3750
+F 0 "R4" H 1859 3796 50  0000 L CNN
+F 1 "1K" H 1859 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1800 3750 50  0001 C CNN
+F 3 "~" H 1800 3750 50  0001 C CNN
+F 4 "Uniroyal Elec" H 1800 3750 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF1001TCE" H 1800 3750 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 1800 3750 50  0001 C CNN "Basic/Extended"
+F 7 "C11702" H 1800 3750 50  0001 C CNN "JLPCB Part #"
+	1    1800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED LED3
+U 1 1 6032EBCF
+P 1700 3400
+F 0 "LED3" H 1693 3145 50  0000 C CNN
+F 1 "LED" H 1693 3236 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1700 3400 50  0001 C CNN
+F 3 "~" H 1700 3400 50  0001 C CNN
+F 4 "19-217/GHC-YR1S2/3T" H 1700 3400 50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "Basic" H 1700 3400 50  0001 C CNN "Basic/Extended"
+F 6 "C72043" H 1700 3400 50  0001 C CNN "JLPCB Part #"
+F 7 "Everlight Elec" H 1700 3400 50  0001 C CNN "Manufacturer_Name"
+	1    1700 3400
+	0    1    -1   0   
+$EndComp
+Text GLabel 850  3250 0    50   Input ~ 0
+RAW
+$Comp
+L Device:C_Small C18
+U 1 1 6035DFE7
+P 950 3600
+F 0 "C18" H 1042 3646 50  0000 L CNN
+F 1 "4.7uF" H 1042 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 950 3600 50  0001 C CNN
+F 3 "~" H 950 3600 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 950 3600 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10A475KO8NNNC" H 950 3600 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 950 3600 50  0001 C CNN "Basic/Extended"
+F 7 "C19666" H 950 3600 50  0001 C CNN "JLPCB Part #"
+	1    950  3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3250 2600 3250
+Wire Wire Line
+	2950 3500 2950 3250
+Wire Wire Line
+	2950 3700 2950 3800
+Wire Wire Line
+	2950 3800 2650 3800
+Connection ~ 2650 3800
+Connection ~ 1050 6250
+Wire Wire Line
+	1050 6250 1050 6200
+Wire Wire Line
+	1150 6200 1050 6200
+Wire Wire Line
+	1150 6300 1050 6300
+Wire Wire Line
+	2450 6100 2600 6100
+$Comp
+L power:GND #PWR0105
+U 1 1 6007FF08
+P 2600 6100
+F 0 "#PWR0105" H 2600 5850 50  0001 C CNN
+F 1 "GND" H 2605 5927 50  0000 C CNN
+F 2 "" H 2600 6100 50  0001 C CNN
+F 3 "" H 2600 6100 50  0001 C CNN
+	1    2600 6100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1900 7400 2050 7400
+Wire Wire Line
+	850  3250 950  3250
+Connection ~ 1700 3250
+Wire Wire Line
+	1700 3250 1900 3250
+Text GLabel 1450 7400 0    50   Input ~ 0
+BATT
+Wire Wire Line
+	1450 7400 1650 7400
+Text GLabel 10500 5050 2    50   Input ~ 0
+ADDR1
+Text GLabel 10500 2650 2    50   Input ~ 0
+ADDR2
+Text GLabel 6800 6000 2    50   Input ~ 0
+ADDR1
+Text GLabel 5650 6000 0    50   Input ~ 0
+ADDR2
+Connection ~ 8550 5300
+Wire Wire Line
+	8550 5300 9600 5300
+$Sheet
+S -2200 7700 1700 850 
+U 6065DA6C
+F0 "panelizing" 50
+F1 "../TweetyDaBird/Gazelle-ProMicro/file6065DA6B.sch" 50
+$EndSheet
+$Comp
+L power:GND #PWR0112
+U 1 1 60140DAA
+P 4450 4950
+F 0 "#PWR0112" H 4450 4700 50  0001 C CNN
+F 1 "GND" H 4455 4777 50  0000 C CNN
+F 2 "" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0001 C CNN
+	1    4450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4900 4450 4950
+Wire Wire Line
+	5000 4600 5150 4600
+Wire Wire Line
+	5150 4200 5150 4600
+Text GLabel 4000 4600 0    50   Input ~ 0
+RAW
+Wire Wire Line
+	4000 4200 4250 4200
+Wire Wire Line
+	4000 4600 4450 4600
+$Comp
+L Device:R_Small R7
+U 1 1 60140497
+P 4450 4800
+F 0 "R7" H 4509 4846 50  0000 L CNN
+F 1 "3K3" H 4509 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4450 4800 50  0001 C CNN
+F 3 "~" H 4450 4800 50  0001 C CNN
+F 4 "Uniroyal Elec" H 4450 4800 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF3301TCE" H 4450 4800 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 4450 4800 50  0001 C CNN "Basic/Extended"
+F 7 "C25890" H 4450 4800 50  0001 C CNN "JLPCB Part #"
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4600 4450 4700
+$Comp
+L Device:Q_PMOS_GSD FT1
+U 1 1 601419DB
+P 4450 4300
+F 0 "FT1" V 4792 4300 50  0000 C CNN
+F 1 "SI2301CDS-T1-GE3" V 4701 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 4400 50  0001 L CNN
+F 3 "http://www.nxp.com/documents/data_sheet/NX2301P.pdf" H 5100 4300 50  0001 L CNN
+F 4 "MOSFET P-CH -20 V -2 A" H 5100 4200 50  0001 L CNN "Description"
+F 5 "1.1" H 5100 4100 50  0001 L CNN "Height"
+F 6 "771-NX2301P215" H 5100 4000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Nexperia/NX2301P215?qs=A1cBxND5mHKs%252BLrxCDENxw%3D%3D" H 5100 3900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay Intertech" H 5100 3800 50  0001 L CNN "Manufacturer_Name"
+F 9 "SI2301CDS-T1-GE3" H 5100 3700 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "Basic" H 4450 4300 50  0001 C CNN "Basic/Extended"
+F 11 "C10487" H 4450 4300 50  0001 C CNN "JLPCB Part #"
+	1    4450 4300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4450 4600
+Wire Wire Line
+	4450 4500 4450 4600
+Wire Wire Line
+	4450 4600 4700 4600
+$Comp
+L power:VCC #PWR0102
+U 1 1 607C37E0
+P 2950 1550
+F 0 "#PWR0102" H 2950 1400 50  0001 C CNN
+F 1 "VCC" H 2965 1723 50  0000 C CNN
+F 2 "" H 2950 1550 50  0001 C CNN
+F 3 "" H 2950 1550 50  0001 C CNN
+	1    2950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4200 5300 4200
+Wire Wire Line
+	5150 4200 4650 4200
+Connection ~ 5150 4200
+Text GLabel 4000 4200 0    50   Input ~ 0
+BATT
+Wire Notes Line
+	650  2450 3250 2450
+Wire Notes Line
+	3400 750  3400 7700
+Wire Notes Line
+	3250 5250 650  5250
+Text Notes 1500 5450 0    50   ~ 0
+Footprint/Ports out
+Text Notes 1500 2750 0    50   ~ 0
+LiPo Charge circuit\n
+Text Notes 750  4350 0    50   ~ 0
+Charge LED 'ON' while charging, 'OFF' when full/not charging\n4.2V charge voltage, 2.9V trickle charge
+Text Notes 3800 6850 0    50   ~ 0
+Battery type selector\nNON-Rechargeable / LiPO
+Wire Notes Line
+	6850 6550 3550 6550
+Text Notes 1350 950  0    50   ~ 0
+3.3V LDO Regulator 200 mAh
+Wire Wire Line
+	1450 1550 1050 1550
+Connection ~ 1450 1550
+Wire Wire Line
+	950  3250 950  3500
+Connection ~ 950  3250
+Wire Wire Line
+	950  3250 1300 3250
+Wire Wire Line
+	950  3700 950  3850
+$Comp
+L Device:C_Small C17
+U 1 1 60205C94
+P 2950 3600
+F 0 "C17" H 3042 3646 50  0000 L CNN
+F 1 "10uF" H 3042 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2950 3600 50  0001 C CNN
+F 3 "~" H 2950 3600 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 2950 3600 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL05A106MQ5NUNC" H 2950 3600 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 2950 3600 50  0001 C CNN "Basic/Extended"
+F 7 "C15525" H 2950 3600 50  0001 C CNN "JLPCB Part #"
+	1    2950 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 800  4950 0    50   ~ 0
+100 mAh - 10K\n200 mAh - 4.7K\n300 mAh - 3.3K\n400 mAh - 2.5K\n500 mAh - 2K\n
+Text GLabel 1050 1550 0    50   Input ~ 0
+V_REG
+Text GLabel 5300 4200 2    50   Input ~ 0
+PWR
+Text GLabel 5650 7100 0    50   Input ~ 0
+BATT
+Wire Wire Line
+	5700 7100 5650 7100
+Wire Wire Line
+	5900 7100 6000 7100
+$Comp
+L Device:R_Small R5
+U 1 1 6013E05F
+P 5800 7100
+F 0 "R5" H 5859 7146 50  0000 L CNN
+F 1 "10M" H 5859 7055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5800 7100 50  0001 C CNN
+F 3 "~" H 5800 7100 50  0001 C CNN
+F 4 "Uniroyal Elec" H 5800 7100 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF1004TCE" H 5800 7100 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 5800 7100 50  0001 C CNN "Basic/Extended"
+F 7 "C26083" H 5800 7100 50  0001 C CNN "JLPCB Part #"
+	1    5800 7100
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	5250 6700 5250 7650
+Text Notes 5650 6800 0    50   ~ 0
+Battery voltage monitor
+Text GLabel 10500 2750 2    50   Input ~ 0
+LED
+Text GLabel 3950 5900 0    50   Input ~ 0
+LED
+Wire Wire Line
+	3950 5900 4000 5900
+Wire Notes Line
+	3550 5250 5250 5250
+Wire Notes Line
+	5250 5250 5250 6450
+Text Notes 3900 5500 0    50   ~ 0
+Programmable status LED\nDual sided footprint
+Wire Notes Line
+	5350 5250 7200 5250
+Wire Notes Line
+	7200 5250 7200 6450
+Text Notes 5700 5400 0    50   ~ 0
+Used for Wireless adress / ID
+Wire Notes Line
+	3650 3550 5850 3550
+Wire Notes Line
+	5850 3550 5850 5100
+Text Notes 3700 3800 0    50   ~ 0
+Power selector, isolates battery from main circuit\nwhen charge coltage is connected to RAW pin.\n
+$Comp
+L power:VCC #PWR0106
+U 1 1 60490938
+P 4250 7150
+F 0 "#PWR0106" H 4250 7000 50  0001 C CNN
+F 1 "VCC" H 4265 7323 50  0000 C CNN
+F 2 "" H 4250 7150 50  0001 C CNN
+F 3 "" H 4250 7150 50  0001 C CNN
+	1    4250 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 7400 2    50   Input ~ 0
+PWR
+Text GLabel 4250 7650 2    50   Input ~ 0
+V_REG
+$Comp
+L Device:Jumper_NC_Dual JP3
+U 1 1 605B5662
+P 4250 7400
+F 0 "JP3" V 4204 7502 50  0000 L CNN
+F 1 "Jumper_Dual" V 4295 7502 50  0000 L CNN
+F 2 "Keyboard Library:SolderJumper-3_mini" H 4250 7400 50  0001 C CNN
+F 3 "~" H 4250 7400 50  0001 C CNN
+	1    4250 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5FF41CA4
+P 8550 4800
+F 0 "R1" H 8609 4846 50  0000 L CNN
+F 1 "1K" H 8609 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8550 4800 50  0001 C CNN
+F 3 "~" H 8550 4800 50  0001 C CNN
+F 4 "Uniroyal Elec" H 8550 4800 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402WGF1001TCE" H 8550 4800 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 8550 4800 50  0001 C CNN "Basic/Extended"
+F 7 "C11702" H 8550 4800 50  0001 C CNN "JLPCB Part #"
+	1    8550 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 750  9700 1650
+Wire Wire Line
+	8250 1100 8250 1200
+Connection ~ 8250 1200
+Wire Wire Line
+	8250 1200 9600 1200
+$Comp
+L Device:C_Small C9
+U 1 1 60218FF5
+P 10900 1500
+F 0 "C9" H 10992 1546 50  0000 L CNN
+F 1 "1nF" H 10992 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10900 1500 50  0001 C CNN
+F 3 "~" H 10900 1500 50  0001 C CNN
+F 4 "Guangdong Fenghua Advanced Tech" H 10900 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402B102K500NT" H 10900 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 10900 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C1523" H 10900 1500 50  0001 C CNN "JLPCB Part #"
+	1    10900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 750  9350 750 
+Wire Wire Line
+	9350 750  9150 750 
+Connection ~ 9350 750 
+$Comp
+L power:GND #PWR01
+U 1 1 605E3051
+P 9350 950
+F 0 "#PWR01" H 9350 700 50  0001 C CNN
+F 1 "GND" H 9355 777 50  0000 C CNN
+F 2 "" H 9350 950 50  0001 C CNN
+F 3 "" H 9350 950 50  0001 C CNN
+	1    9350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 605EC36F
+P 10550 1300
+F 0 "L5" V 10369 1300 50  0000 C CNN
+F 1 "15nH" V 10460 1300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 10550 1300 50  0001 C CNN
+F 3 "~" H 10550 1300 50  0001 C CNN
+F 4 "Sunlord" H 10550 1300 50  0001 C CNN "Manufacturer_Name"
+F 5 "SDCL1005C15NJTDF" H 10550 1300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 10550 1300 50  0001 C CNN "Basic/Extended"
+F 7 "C27143" H 10550 1300 50  0001 C CNN "JLPCB Part #"
+	1    10550 1300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 605ED060
+P 10250 1300
+F 0 "L4" V 10069 1300 50  0000 C CNN
+F 1 "10nH" V 10160 1300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10250 1300 50  0001 C CNN
+F 3 "~" H 10250 1300 50  0001 C CNN
+F 4 "Sunlord" H 10250 1300 50  0001 C CNN "Manufacturer_Name"
+F 5 "SDCL1608C10NJTDF" H 10250 1300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 10250 1300 50  0001 C CNN "Basic/Extended"
+F 7 "C15666" H 10250 1300 50  0001 C CNN "JLPCB Part #"
+	1    10250 1300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 60618EA3
+P 10700 1500
+F 0 "C12" H 10792 1546 50  0000 L CNN
+F 1 "1uF" H 10792 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 1500 50  0001 C CNN
+F 3 "~" H 10700 1500 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 10700 1500 50  0001 C CNN "Manufacturer_Name"
+F 5 "CL10A105KB8NNNC" H 10700 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 10700 1500 50  0001 C CNN "Basic/Extended"
+F 7 "C15849" H 10700 1500 50  0001 C CNN "JLPCB Part #"
+	1    10700 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1400 10700 1300
+$Comp
+L power:GND #PWR0108
+U 1 1 6061F641
+P 10800 1650
+F 0 "#PWR0108" H 10800 1400 50  0001 C CNN
+F 1 "GND" H 10805 1477 50  0000 C CNN
+F 2 "" H 10800 1650 50  0001 C CNN
+F 3 "" H 10800 1650 50  0001 C CNN
+	1    10800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 1400 10900 1300
+Wire Wire Line
+	10900 1050 9900 1050
+Wire Wire Line
+	9900 1050 9900 1650
+Wire Wire Line
+	10700 1300 10900 1300
+Connection ~ 10700 1300
+Wire Wire Line
+	10800 1650 10800 1600
+Connection ~ 10800 1600
+Wire Wire Line
+	10800 1600 10700 1600
+Wire Wire Line
+	10900 1600 10800 1600
+$Comp
+L power:GND #PWR0110
+U 1 1 606A14A7
+P 7000 2900
+F 0 "#PWR0110" H 7000 2650 50  0001 C CNN
+F 1 "GND" H 7005 2727 50  0000 C CNN
+F 2 "" H 7000 2900 50  0001 C CNN
+F 3 "" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2900 7000 2850
+Connection ~ 7000 2850
+Wire Wire Line
+	7000 2850 7250 2850
+Connection ~ 8050 2200
+Wire Wire Line
+	8050 2200 7900 2200
+Wire Wire Line
+	8700 2450 8600 2450
+Wire Wire Line
+	8600 2450 8600 2500
+Wire Wire Line
+	8600 2500 8050 2500
+Text GLabel 2950 3250 2    50   Input ~ 0
+BATT
+Text GLabel 9350 6150 1    50   Input ~ 0
+BATT
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60712792
+P 9350 6150
+F 0 "#FLG0103" H 9350 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 6323 50  0000 C CNN
+F 2 "" H 9350 6150 50  0001 C CNN
+F 3 "~" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	-1   0    0    1   
+$EndComp
+Text GLabel 8950 6150 1    50   Input ~ 0
+RAW
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6071E3ED
+P 8950 6150
+F 0 "#FLG0104" H 8950 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 8950 6323 50  0000 C CNN
+F 2 "" H 8950 6150 50  0001 C CNN
+F 3 "~" H 8950 6150 50  0001 C CNN
+	1    8950 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 60726E59
+P 8550 6150
+F 0 "#FLG0105" H 8550 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 8550 6323 50  0000 C CNN
+F 2 "" H 8550 6150 50  0001 C CNN
+F 3 "~" H 8550 6150 50  0001 C CNN
+	1    8550 6150
+	-1   0    0    1   
+$EndComp
+Text GLabel 10400 1050 1    50   Input ~ 0
+AVDD
+Wire Wire Line
+	10100 1300 10100 1650
+Wire Wire Line
+	10900 1300 10900 1050
+Connection ~ 10900 1300
+Text GLabel 8550 6150 1    50   Input ~ 0
+AVDD
+Text GLabel 10500 2350 2    50   Input ~ 0
+P04
+NoConn ~ 10500 3750
+NoConn ~ 10500 4850
+NoConn ~ 10500 4350
+NoConn ~ 10500 4950
+Wire Wire Line
+	6000 2600 6000 2500
+$Comp
+L power:GND #PWR03
+U 1 1 6089F826
+P 950 3850
+F 0 "#PWR03" H 950 3600 50  0001 C CNN
+F 1 "GND" H 955 3677 50  0000 C CNN
+F 2 "" H 950 3850 50  0001 C CNN
+F 3 "" H 950 3850 50  0001 C CNN
+	1    950  3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED4
+U 1 1 608C3CBD
+P 1300 3400
+F 0 "LED4" H 1293 3145 50  0000 C CNN
+F 1 "LED" H 1293 3236 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1300 3400 50  0001 C CNN
+F 3 "~" H 1300 3400 50  0001 C CNN
+F 4 "" H 1300 3400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1300 3400
+	0    1    -1   0   
+$EndComp
+Connection ~ 1300 3250
+Wire Wire Line
+	1300 3250 1700 3250
+Wire Wire Line
+	1900 3550 1900 3750
+Wire Wire Line
+	1300 3750 1300 3550
+Wire Wire Line
+	1700 3550 1700 3750
+Wire Wire Line
+	1700 3750 1300 3750
+Connection ~ 1700 3750
+Text GLabel 10500 2450 2    50   Input ~ 0
+P05
+Text GLabel 1150 6900 0    50   Input ~ 0
+P03
+Text GLabel 1150 6700 0    50   Input ~ 0
+P01
+Text GLabel 1150 6800 0    50   Input ~ 0
+P02
+Text GLabel 1150 6600 0    50   Input ~ 0
+P00
+Text GLabel 1150 7000 0    50   Input ~ 0
+P04
+Text GLabel 1150 7100 0    50   Input ~ 0
+P05
+$Comp
+L Device:R_Small R2
+U 1 1 601A72D9
+P 6600 2500
+F 0 "R2" H 6659 2546 50  0000 L CNN
+F 1 "0" H 6659 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 2500 50  0001 C CNN
+F 3 "~" H 6600 2500 50  0001 C CNN
+F 4 "Uniroyal Elec" H 6600 2500 50  0001 C CNN "Manufacturer_Name"
+F 5 "0603WAF0000T5E" H 6600 2500 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 6600 2500 50  0001 C CNN "Basic/Extended"
+F 7 "C21189" H 6600 2500 50  0001 C CNN "JLPCB Part #"
+	1    6600 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 2800 6300 2850
+Wire Wire Line
+	6300 2500 6300 2600
+$Comp
+L Device:C_Small C6
+U 1 1 60217595
+P 6300 2700
+F 0 "C6" H 6392 2746 50  0000 L CNN
+F 1 "1.5pF" H 6392 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6300 2700 50  0001 C CNN
+F 3 "~" H 6300 2700 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 6300 2700 50  0001 C CNN "Manufacturer_Name"
+F 5 "0402CG1R5C500NT" H 6300 2700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Basic" H 6300 2700 50  0001 C CNN "Basic/Extended"
+F 7 "C1552" H 6300 2700 50  0001 C CNN "JLPCB Part #"
+	1    6300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2500 6300 2500
+Wire Wire Line
+	6500 2500 6300 2500
+$Comp
+L Regulator_Linear:XC6206PxxxMR U4
+U 1 1 602068E8
+P 2000 1550
+F 0 "U4" H 2000 1792 50  0000 C CNN
+F 1 "XC6206PxxxMR" H 2000 1701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2000 1775 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 2000 1550 50  0001 C CNN
+F 4 "Basic" H 2000 1550 50  0001 C CNN "Basic/Extended"
+F 5 "C5446" H 2000 1550 50  0001 C CNN "JLPCB Part #"
+F 6 "Torex Semicon" H 2000 1550 50  0001 C CNN "Manufacturer_Name"
+F 7 "XC6206P332MR" H 2000 1550 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1550 1700 1550
+Wire Wire Line
+	2000 1850 2000 2000
+Wire Wire Line
+	2000 2000 2500 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	2000 2000 1450 2000
+Wire Wire Line
+	2000 2100 2000 2000
+$Comp
+L Diode:NSR0340HT1G D1
+U 1 1 602AD4EE
+P 4850 4600
+F 0 "D1" H 4850 4383 50  0000 C CNN
+F 1 "NSR0340HT1G" H 4850 4474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4850 4425 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NSR0340H-D.PDF" H 4850 4600 50  0001 C CNN
+F 4 "Extended" H 4850 4600 50  0001 C CNN "Basic/Extended"
+F 5 "C152519" H 4850 4600 50  0001 C CNN "JLPCB Part #"
+F 6 "ON Semicon" H 4850 4600 50  0001 C CNN "Manufacturer_Name"
+F 7 "NSR0240HT1G" H 4850 4600 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4850 4600
+	-1   0    0    1   
+$EndComp
+Text GLabel 1150 6400 0    50   Input ~ 0
+P024
+Text GLabel 1150 6500 0    50   Input ~ 0
+P025
+Text Notes -3350 4950 0    50   ~ 0
+Battery charge/protection module (100/500/1000mA)\nWith loadsharing circuit (allows battery to charge in use)
+Wire Notes Line
+	-3550 1900 -650 1900
+Wire Notes Line
+	-650 1900 -650 4950
+Text GLabel -4600 350  3    50   Input ~ 0
+Batt+
+Text GLabel -4500 350  3    50   Input ~ 0
+Batt-
+$Comp
+L Keyboard_Library:TP4056_Charger U?
+U 1 1 61390A43
+P -5450 -300
+AR Path="/61390A43" Ref="U?"  Part="1" 
+AR Path="/6052CCBD/61390A43" Ref="U?"  Part="1" 
+F 0 "U?" H -5292 215 50  0000 C CNN
+F 1 "TP4056_Charger" H -5292 124 50  0000 C CNN
+F 2 "" H -5450 -50 50  0001 C CNN
+F 3 "" H -5450 -50 50  0001 C CNN
+	1    -5450 -300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61390A49
+P -4900 600
+AR Path="/61390A49" Ref="#PWR?"  Part="1" 
+AR Path="/6052CCBD/61390A49" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H -4900 350 50  0001 C CNN
+F 1 "GND" H -4895 427 50  0000 C CNN
+F 2 "" H -4900 600 50  0001 C CNN
+F 3 "" H -4900 600 50  0001 C CNN
+	1    -4900 600 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-4900 600  -4900 50  
+Wire Wire Line
+	-4500 350  -4500 -300
+Wire Wire Line
+	-4500 -300 -4900 -300
+Wire Wire Line
+	-4900 -200 -4600 -200
+Wire Wire Line
+	-4600 -200 -4600 350 
+Text Notes -5750 350  1    50   ~ 0
+Footprint needs to be confirmed!
+Text GLabel -4200 350  3    50   Input ~ 0
+Load+
+Text GLabel -4300 350  3    50   Input ~ 0
+Load-
+Wire Wire Line
+	-4900 -50  -4800 -50 
+Wire Wire Line
+	-4800 350  -4800 -50 
+Text GLabel -4800 350  3    50   Input ~ 0
+VBUS
+Wire Wire Line
+	-4900 -850 -4900 -550
+Wire Wire Line
+	-4800 -850 -4900 -850
+Wire Wire Line
+	-3400 -50  -3400 -450
+Wire Wire Line
+	-3300 -850 -3300 250 
+Connection ~ -4800 -50 
+Wire Wire Line
+	-4800 -50  -4200 -50 
+$Comp
+L SamacSys_Parts:DMP1045U-7 IC?
+U 1 1 61390A66
+P -4200 -50
+AR Path="/61390A66" Ref="IC?"  Part="1" 
+AR Path="/6052CCBD/61390A66" Ref="IC?"  Part="1" 
+F 0 "IC?" H -3800 215 50  0000 C CNN
+F 1 "DMP1045U-7" H -3800 124 50  0000 C CNN
+F 2 "SOT96P240X120-3N" H -3550 50  50  0001 L CNN
+F 3 "" H -3550 -50 50  0001 L CNN
+F 4 "P-Channel Enhancement MOSFET SOT-23 Diodes Inc DMP1045U-7 P-channel MOSFET Transistor, 5.2 A, -12 V, 3-Pin SOT23" H -3550 -150 50  0001 L CNN "Description"
+F 5 "1.2" H -3550 -250 50  0001 L CNN "Height"
+F 6 "621-DMP1045U-7" H -3550 -350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP1045U-7/?qs=T%2FOtf55vL7eEKnIWhgMvTQ%3D%3D" H -3550 -450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H -3550 -550 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMP1045U-7" H -3550 -650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    -4200 -50 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-4200 50   -4200 250 
+Wire Wire Line
+	-4200 350  -4200 250 
+Connection ~ -4200 250 
+Wire Wire Line
+	-4200 250  -3300 250 
+Connection ~ -4200 -50 
+Wire Wire Line
+	-4200 -850 -4200 -50 
+Connection ~ -4900 -550
+Wire Wire Line
+	-4300 -550 -4900 -550
+Wire Wire Line
+	-4300 350  -4300 -550
+$Comp
+L Diode:B130-E3 D?
+U 1 1 61390A75
+P -3950 -850
+AR Path="/61390A75" Ref="D?"  Part="1" 
+AR Path="/6052CCBD/61390A75" Ref="D?"  Part="1" 
+F 0 "D?" H -3950 -1067 50  0000 C CNN
+F 1 "B130-E3" H -3950 -976 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H -3950 -1025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88946/b120.pdf" H -3950 -850 50  0001 C CNN
+	1    -3950 -850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-4200 -850 -4600 -850
+Wire Wire Line
+	-3800 -850 -3300 -850
+Wire Wire Line
+	-3400 -450 -4900 -450
+Connection ~ -4200 -850
+Wire Wire Line
+	-4100 -850 -4200 -850
+$Comp
+L Device:R_Small R?
+U 1 1 61390A80
+P -4700 -850
+AR Path="/61390A80" Ref="R?"  Part="1" 
+AR Path="/6052CCBD/61390A80" Ref="R?"  Part="1" 
+F 0 "R?" H -4641 -804 50  0000 L CNN
+F 1 "100k" H -4641 -895 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -4700 -850 50  0001 C CNN
+F 3 "~" H -4700 -850 50  0001 C CNN
+	1    -4700 -850
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

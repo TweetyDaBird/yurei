@@ -14,26 +14,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	4350 3300 4100 3300
+	5150 3300 4100 3300
 $Comp
 L Device:R R?
 U 1 1 64379CC7
-P 4650 4050
+P 4500 4050
 AR Path="/5D8219F0/64379CC7" Ref="R?"  Part="1" 
 AR Path="/5D6CC2CC/64379CC7" Ref="R?"  Part="1" 
 AR Path="/5D696341/64379CC7" Ref="R?"  Part="1" 
 AR Path="/5E1CFEC6/64379CC7" Ref="R?"  Part="1" 
 AR Path="/5E135D8F/64379CC7" Ref="R14"  Part="1" 
 AR Path="/60144166/64379CC7" Ref="R14"  Part="1" 
-F 0 "R14" V 4730 4050 50  0000 C CNN
-F 1 "20k" V 4650 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 4050 50  0001 C CNN
-F 3 "" H 4650 4050 50  0001 C CNN
-F 4 "1" H 4650 4050 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 4650 4050 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3GEYJ203V" H 4650 4050 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3GEYJ203V" H 4650 4050 50  0001 C CNN "Mouser Part Number"
-	1    4650 4050
+F 0 "R14" V 4580 4050 50  0000 C CNN
+F 1 "20k" V 4500 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 4050 50  0001 C CNN
+F 3 "" H 4500 4050 50  0001 C CNN
+F 4 "1" H 4500 4050 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 4500 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3GEYJ203V" H 4500 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3GEYJ203V" H 4500 4050 50  0001 C CNN "Mouser Part Number"
+	1    4500 4050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -71,26 +71,9 @@ F 7 "581-06035C104JAT2A" H 4050 1750 50  0001 C CNN "Mouser Part Number"
 	1    4050 1750
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 64379CE5
-P 3800 1650
-AR Path="/5D8219F0/64379CE5" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/64379CE5" Ref="#PWR?"  Part="1" 
-AR Path="/5D696341/64379CE5" Ref="#PWR?"  Part="1" 
-AR Path="/5E1CFEC6/64379CE5" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/64379CE5" Ref="#PWR042"  Part="1" 
-AR Path="/60144166/64379CE5" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 3800 1500 50  0001 C CNN
-F 1 "VCC" H 3800 1800 50  0000 C CNN
-F 2 "" H 3800 1650 50  0001 C CNN
-F 3 "" H 3800 1650 50  0001 C CNN
-	1    3800 1650
-	-1   0    0    -1  
-$EndComp
 Text GLabel 5150 3400 2    50   Input ~ 0
-RGB_INT
-Text GLabel 4350 3300 2    50   Input ~ 0
+INTB
+Text GLabel 5150 3300 2    50   Input ~ 0
 I2C-
 $Comp
 L Driver_LED:IS31FL3737 U?
@@ -225,24 +208,6 @@ F 7 "963-UMK107B7474KA-TR" H 4450 3000 50  0001 C CNN "Mouser Part Number"
 	1    4450 3000
 	0    1    1    0   
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5EA109DB
-P 4200 2950
-AR Path="/5D8219F0/5EA109DB" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/5EA109DB" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/5EA109DB" Ref="#PWR?"  Part="1" 
-AR Path="/5D3D0542/5EA109DB" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/5EA109DB" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/5EA109DB" Ref="#PWR011"  Part="1" 
-AR Path="/60144166/5EA109DB" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 4200 2800 50  0001 C CNN
-F 1 "VCC" H 4200 3100 50  0000 C CNN
-F 2 "" H 4200 2950 50  0001 C CNN
-F 3 "" H 4200 2950 50  0001 C CNN
-	1    4200 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 3000 4200 3000
 Wire Wire Line
@@ -267,8 +232,6 @@ F 3 "" H 5150 3000 50  0001 C CNN
 	1    5150 3000
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	5150 3000 4850 3000
 $Comp
 L power:GND #PWR?
 U 1 1 5EA5AD4E
@@ -302,53 +265,53 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5EAC3812
-P 4750 4700
+P 4800 4700
 AR Path="/5D8219F0/5EAC3812" Ref="#PWR?"  Part="1" 
 AR Path="/5D6CC2CC/5EAC3812" Ref="#PWR?"  Part="1" 
 AR Path="/5DEF6A4C/5EAC3812" Ref="#PWR?"  Part="1" 
 AR Path="/5E49A860/5EAC3812" Ref="#PWR?"  Part="1" 
 AR Path="/5E135D8F/5EAC3812" Ref="#PWR038"  Part="1" 
 AR Path="/60144166/5EAC3812" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 4750 4450 50  0001 C CNN
-F 1 "GND" H 4750 4550 50  0000 C CNN
-F 2 "" H 4750 4700 50  0001 C CNN
-F 3 "" H 4750 4700 50  0001 C CNN
-	1    4750 4700
+F 0 "#PWR038" H 4800 4450 50  0001 C CNN
+F 1 "GND" H 4800 4550 50  0000 C CNN
+F 2 "" H 4800 4700 50  0001 C CNN
+F 3 "" H 4800 4700 50  0001 C CNN
+	1    4800 4700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 4000 4100 4000
 Wire Wire Line
-	4100 3600 4850 3600
+	4100 3600 4700 3600
 Wire Wire Line
-	4100 3900 4650 3900
+	4100 3900 4500 3900
 Wire Wire Line
-	4850 3900 4850 3600
+	4700 3900 4700 3600
 Wire Wire Line
-	4650 4200 4650 4300
+	4500 4200 4500 4300
 Wire Wire Line
-	4650 4300 4750 4300
+	4500 4300 4700 4300
 Wire Wire Line
-	4850 4200 4850 4300
+	4700 4200 4700 4300
 $Comp
 L Device:R R?
 U 1 1 5EAA8583
-P 4850 4050
+P 4700 4050
 AR Path="/5D8219F0/5EAA8583" Ref="R?"  Part="1" 
 AR Path="/5D6CC2CC/5EAA8583" Ref="R?"  Part="1" 
 AR Path="/5D696341/5EAA8583" Ref="R?"  Part="1" 
 AR Path="/5E1CFEC6/5EAA8583" Ref="R?"  Part="1" 
 AR Path="/5E135D8F/5EAA8583" Ref="R15"  Part="1" 
 AR Path="/60144166/5EAA8583" Ref="R15"  Part="1" 
-F 0 "R15" V 4930 4050 50  0000 C CNN
-F 1 "100k" V 4850 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 4050 50  0001 C CNN
-F 3 "" H 4850 4050 50  0001 C CNN
-F 4 "1" H 4850 4050 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 4850 4050 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 4850 4050 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 4850 4050 50  0001 C CNN "Mouser Part Number"
-	1    4850 4050
+F 0 "R15" V 4780 4050 50  0000 C CNN
+F 1 "100k" V 4700 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 4050 50  0001 C CNN
+F 3 "" H 4700 4050 50  0001 C CNN
+F 4 "1" H 4700 4050 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 4700 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF1003V" H 4700 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF1003V" H 4700 4050 50  0001 C CNN "Mouser Part Number"
+	1    4700 4050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -493,89 +456,74 @@ Wire Wire Line
 Wire Wire Line
 	3400 2000 3400 2800
 Wire Wire Line
-	4750 4700 4750 4300
-Connection ~ 4750 4300
+	4800 4700 4800 4300
+Connection ~ 4800 4300
 Wire Wire Line
-	4750 4300 4850 4300
+	4800 4300 4700 4300
 Wire Wire Line
-	5050 3900 5050 3500
+	4900 3900 4900 3500
 $Comp
 L Device:R R?
 U 1 1 64379CF0
-P 5050 4050
+P 4900 4050
 AR Path="/5D8219F0/64379CF0" Ref="R?"  Part="1" 
 AR Path="/5D6CC2CC/64379CF0" Ref="R?"  Part="1" 
 AR Path="/5D696341/64379CF0" Ref="R?"  Part="1" 
 AR Path="/5E1CFEC6/64379CF0" Ref="R?"  Part="1" 
 AR Path="/5E135D8F/64379CF0" Ref="R16"  Part="1" 
 AR Path="/60144166/64379CF0" Ref="R16"  Part="1" 
-F 0 "R16" V 5130 4050 50  0000 C CNN
-F 1 "100k" V 5050 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 4050 50  0001 C CNN
-F 3 "" H 5050 4050 50  0001 C CNN
-F 4 "1" H 5050 4050 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 5050 4050 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 5050 4050 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 5050 4050 50  0001 C CNN "Mouser Part Number"
-	1    5050 4050
+F 0 "R16" V 4980 4050 50  0000 C CNN
+F 1 "100k" V 4900 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 4050 50  0001 C CNN
+F 3 "" H 4900 4050 50  0001 C CNN
+F 4 "1" H 4900 4050 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 4900 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF1003V" H 4900 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF1003V" H 4900 4050 50  0001 C CNN "Mouser Part Number"
+	1    4900 4050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4250 4000 4250 4300
+	4250 4000 4250 4050
 Wire Wire Line
-	4100 3500 5050 3500
+	4100 3500 4900 3500
 Text GLabel 5150 3500 2    50   Input ~ 0
-RGB_ENABLE
+SDB
 Wire Wire Line
-	4350 3200 4100 3200
-Text GLabel 4350 3200 2    50   Input ~ 0
+	5150 3200 4100 3200
+Text GLabel 5150 3200 2    50   Input ~ 0
 I2C+
 Wire Wire Line
-	5150 3400 4850 3400
+	5150 3400 5100 3400
 $Comp
 L Device:R R?
 U 1 1 5F259971
-P 4850 3200
+P 5100 4050
 AR Path="/5D8219F0/5F259971" Ref="R?"  Part="1" 
 AR Path="/5D6CC2CC/5F259971" Ref="R?"  Part="1" 
 AR Path="/5D696341/5F259971" Ref="R?"  Part="1" 
 AR Path="/5E1CFEC6/5F259971" Ref="R?"  Part="1" 
 AR Path="/5E135D8F/5F259971" Ref="R17"  Part="1" 
 AR Path="/60144166/5F259971" Ref="R17"  Part="1" 
-F 0 "R17" V 4930 3200 50  0000 C CNN
-F 1 "100k" V 4850 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 3200 50  0001 C CNN
-F 3 "" H 4850 3200 50  0001 C CNN
-F 4 "1" H 4850 3200 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 4850 3200 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 4850 3200 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 4850 3200 50  0001 C CNN "Mouser Part Number"
-	1    4850 3200
-	1    0    0    -1  
+F 0 "R17" V 5180 4050 50  0000 C CNN
+F 1 "100k" V 5100 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 4050 50  0001 C CNN
+F 3 "" H 5100 4050 50  0001 C CNN
+F 4 "1" H 5100 4050 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 5100 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF1003V" H 5100 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF1003V" H 5100 4050 50  0001 C CNN "Mouser Part Number"
+	1    5100 4050
+	-1   0    0    1   
 $EndComp
-Connection ~ 4850 3400
+Connection ~ 4900 3500
 Wire Wire Line
-	4850 3350 4850 3400
+	4900 3500 5150 3500
 Wire Wire Line
-	4850 3050 4850 3000
-Connection ~ 4850 3000
+	4900 4300 4800 4300
 Wire Wire Line
-	4850 3000 4550 3000
-Connection ~ 5050 3500
-Text Label 4250 3900 0    50   ~ 0
-RSET
-Text Label 4300 3600 0    50   ~ 0
-IICRST
-Wire Wire Line
-	4100 3400 4850 3400
-NoConn ~ 4100 3800
-Wire Wire Line
-	5050 3500 5150 3500
-Wire Wire Line
-	5050 4300 4850 4300
-Wire Wire Line
-	5050 4200 5050 4300
-Connection ~ 4850 4300
+	4900 4200 4900 4300
+Connection ~ 4700 4300
 $Comp
 L Device:CP C?
 U 1 1 5F4E23C2
@@ -604,73 +552,22 @@ Wire Wire Line
 Wire Wire Line
 	5100 1650 4400 1650
 Connection ~ 4400 1650
-Wire Wire Line
-	4400 4300 4250 4300
-Connection ~ 4250 4300
 $Comp
 L power:GND #PWR?
 U 1 1 604B04B7
-P 4400 4700
+P 4250 4050
 AR Path="/5D8219F0/604B04B7" Ref="#PWR?"  Part="1" 
 AR Path="/5D6CC2CC/604B04B7" Ref="#PWR?"  Part="1" 
 AR Path="/5DEF6A4C/604B04B7" Ref="#PWR?"  Part="1" 
 AR Path="/5E49A860/604B04B7" Ref="#PWR?"  Part="1" 
 AR Path="/5E135D8F/604B04B7" Ref="#PWR0108"  Part="1" 
 AR Path="/60144166/604B04B7" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 4400 4450 50  0001 C CNN
-F 1 "GND" H 4400 4550 50  0000 C CNN
-F 2 "" H 4400 4700 50  0001 C CNN
-F 3 "" H 4400 4700 50  0001 C CNN
-	1    4400 4700
+F 0 "#PWR0108" H 4250 3800 50  0001 C CNN
+F 1 "GND" H 4250 3900 50  0000 C CNN
+F 2 "" H 4250 4050 50  0001 C CNN
+F 3 "" H 4250 4050 50  0001 C CNN
+	1    4250 4050
 	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 4700 4400 4600
-$Comp
-L power:VCC #PWR?
-U 1 1 604BDE0B
-P 4250 4700
-AR Path="/5D8219F0/604BDE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/604BDE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/604BDE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5D3D0542/604BDE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/604BDE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/604BDE0B" Ref="#PWR0109"  Part="1" 
-AR Path="/60144166/604BDE0B" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 4250 4550 50  0001 C CNN
-F 1 "VCC" H 4250 4850 50  0000 C CNN
-F 2 "" H 4250 4700 50  0001 C CNN
-F 3 "" H 4250 4700 50  0001 C CNN
-	1    4250 4700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4250 4700 4250 4600
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60402124
-P 4250 4450
-F 0 "JP1" H 4250 4655 50  0000 C CNN
-F 1 "Right" H 4250 4564 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4250 4450 50  0001 C CNN
-F 3 "~" H 4250 4450 50  0001 C CNN
-F 4 "0" H 4250 4450 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 4250 4450 50  0001 C CNN "Manufacturer_Part_Number"
-	1    4250 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 604040D1
-P 4400 4450
-F 0 "JP2" H 4400 4655 50  0000 C CNN
-F 1 "Left" H 4400 4564 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4400 4450 50  0001 C CNN
-F 3 "~" H 4400 4450 50  0001 C CNN
-F 4 "0" H 4400 4450 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 4400 4450 50  0001 C CNN "Manufacturer_Part_Number"
-	1    4400 4450
-	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	2750 4100 2900 4100
@@ -681,7 +578,7 @@ Wire Wire Line
 Text GLabel 2750 4100 0    50   Input ~ 0
 CS12
 Wire Wire Line
-	8650 3250 8400 3250
+	9100 3250 8400 3250
 $Comp
 L Device:R R?
 U 1 1 60FF4178
@@ -738,26 +635,7 @@ F 7 "581-06035C104JAT2A" H 8350 1700 50  0001 C CNN "Mouser Part Number"
 	1    8350 1700
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 60FF418E
-P 8100 1600
-AR Path="/5D8219F0/60FF418E" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/60FF418E" Ref="#PWR?"  Part="1" 
-AR Path="/5D696341/60FF418E" Ref="#PWR?"  Part="1" 
-AR Path="/5E1CFEC6/60FF418E" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/60FF418E" Ref="#PWR?"  Part="1" 
-AR Path="/60144166/60FF418E" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 8100 1450 50  0001 C CNN
-F 1 "VCC" H 8100 1750 50  0000 C CNN
-F 2 "" H 8100 1600 50  0001 C CNN
-F 3 "" H 8100 1600 50  0001 C CNN
-	1    8100 1600
-	-1   0    0    -1  
-$EndComp
-Text GLabel 9450 3350 2    50   Input ~ 0
-RGB_INT
-Text GLabel 8650 3250 2    50   Input ~ 0
+Text GLabel 9100 3250 2    50   Input ~ 0
 I2C-
 $Comp
 L Driver_LED:IS31FL3737 U?
@@ -892,24 +770,6 @@ F 7 "963-UMK107B7474KA-TR" H 8750 2950 50  0001 C CNN "Mouser Part Number"
 	1    8750 2950
 	0    1    1    0   
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 60FF41DB
-P 8500 2900
-AR Path="/5D8219F0/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/5D3D0542/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/60FF41DB" Ref="#PWR?"  Part="1" 
-AR Path="/60144166/60FF41DB" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 8500 2750 50  0001 C CNN
-F 1 "VCC" H 8500 3050 50  0000 C CNN
-F 2 "" H 8500 2900 50  0001 C CNN
-F 3 "" H 8500 2900 50  0001 C CNN
-	1    8500 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 2950 8500 2950
 Wire Wire Line
@@ -934,8 +794,6 @@ F 3 "" H 9450 2950 50  0001 C CNN
 	1    9450 2950
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	9450 2950 9150 2950
 $Comp
 L power:GND #PWR?
 U 1 1 60FF41EC
@@ -969,55 +827,24 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 60FF41F9
-P 9050 4650
+P 8950 4300
 AR Path="/5D8219F0/60FF41F9" Ref="#PWR?"  Part="1" 
 AR Path="/5D6CC2CC/60FF41F9" Ref="#PWR?"  Part="1" 
 AR Path="/5DEF6A4C/60FF41F9" Ref="#PWR?"  Part="1" 
 AR Path="/5E49A860/60FF41F9" Ref="#PWR?"  Part="1" 
 AR Path="/5E135D8F/60FF41F9" Ref="#PWR?"  Part="1" 
 AR Path="/60144166/60FF41F9" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 9050 4400 50  0001 C CNN
-F 1 "GND" H 9050 4500 50  0000 C CNN
-F 2 "" H 9050 4650 50  0001 C CNN
-F 3 "" H 9050 4650 50  0001 C CNN
-	1    9050 4650
+F 0 "#PWR0110" H 8950 4050 50  0001 C CNN
+F 1 "GND" H 8950 4150 50  0000 C CNN
+F 2 "" H 8950 4300 50  0001 C CNN
+F 3 "" H 8950 4300 50  0001 C CNN
+	1    8950 4300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 3950 8400 3950
-Wire Wire Line
-	8400 3550 9150 3550
+	8400 3550 9100 3550
 Wire Wire Line
 	8400 3850 8950 3850
-Wire Wire Line
-	9150 3850 9150 3550
-Wire Wire Line
-	8950 4150 8950 4250
-Wire Wire Line
-	8950 4250 9050 4250
-Wire Wire Line
-	9150 4150 9150 4250
-$Comp
-L Device:R R?
-U 1 1 60FF420A
-P 9150 4000
-AR Path="/5D8219F0/60FF420A" Ref="R?"  Part="1" 
-AR Path="/5D6CC2CC/60FF420A" Ref="R?"  Part="1" 
-AR Path="/5D696341/60FF420A" Ref="R?"  Part="1" 
-AR Path="/5E1CFEC6/60FF420A" Ref="R?"  Part="1" 
-AR Path="/5E135D8F/60FF420A" Ref="R?"  Part="1" 
-AR Path="/60144166/60FF420A" Ref="R5"  Part="1" 
-F 0 "R5" V 9230 4000 50  0000 C CNN
-F 1 "100k" V 9150 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 4000 50  0001 C CNN
-F 3 "" H 9150 4000 50  0001 C CNN
-F 4 "1" H 9150 4000 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 9150 4000 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 9150 4000 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 9150 4000 50  0001 C CNN "Mouser Part Number"
-	1    9150 4000
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60FF4214
@@ -1160,89 +987,9 @@ Wire Wire Line
 Wire Wire Line
 	7700 1950 7700 2750
 Wire Wire Line
-	9050 4650 9050 4250
-Connection ~ 9050 4250
-Wire Wire Line
-	9050 4250 9150 4250
-Wire Wire Line
-	9350 3850 9350 3450
-$Comp
-L Device:R R?
-U 1 1 60FF4269
-P 9350 4000
-AR Path="/5D8219F0/60FF4269" Ref="R?"  Part="1" 
-AR Path="/5D6CC2CC/60FF4269" Ref="R?"  Part="1" 
-AR Path="/5D696341/60FF4269" Ref="R?"  Part="1" 
-AR Path="/5E1CFEC6/60FF4269" Ref="R?"  Part="1" 
-AR Path="/5E135D8F/60FF4269" Ref="R?"  Part="1" 
-AR Path="/60144166/60FF4269" Ref="R6"  Part="1" 
-F 0 "R6" V 9430 4000 50  0000 C CNN
-F 1 "100k" V 9350 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9280 4000 50  0001 C CNN
-F 3 "" H 9350 4000 50  0001 C CNN
-F 4 "1" H 9350 4000 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 9350 4000 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 9350 4000 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 9350 4000 50  0001 C CNN "Mouser Part Number"
-	1    9350 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8550 3950 8550 4250
-Wire Wire Line
-	8400 3450 9350 3450
-Text GLabel 9450 3450 2    50   Input ~ 0
-RGB_ENABLE
-Wire Wire Line
-	8650 3150 8400 3150
-Text GLabel 8650 3150 2    50   Input ~ 0
+	9100 3150 8400 3150
+Text GLabel 9100 3150 2    50   Input ~ 0
 I2C+
-Wire Wire Line
-	9450 3350 9150 3350
-$Comp
-L Device:R R?
-U 1 1 60FF4279
-P 9150 3150
-AR Path="/5D8219F0/60FF4279" Ref="R?"  Part="1" 
-AR Path="/5D6CC2CC/60FF4279" Ref="R?"  Part="1" 
-AR Path="/5D696341/60FF4279" Ref="R?"  Part="1" 
-AR Path="/5E1CFEC6/60FF4279" Ref="R?"  Part="1" 
-AR Path="/5E135D8F/60FF4279" Ref="R?"  Part="1" 
-AR Path="/60144166/60FF4279" Ref="R3"  Part="1" 
-F 0 "R3" V 9230 3150 50  0000 C CNN
-F 1 "100k" V 9150 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 3150 50  0001 C CNN
-F 3 "" H 9150 3150 50  0001 C CNN
-F 4 "1" H 9150 3150 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 9150 3150 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF1003V" H 9150 3150 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF1003V" H 9150 3150 50  0001 C CNN "Mouser Part Number"
-	1    9150 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 9150 3350
-Wire Wire Line
-	9150 3300 9150 3350
-Wire Wire Line
-	9150 3000 9150 2950
-Connection ~ 9150 2950
-Wire Wire Line
-	9150 2950 8850 2950
-Connection ~ 9350 3450
-Text Label 8550 3850 0    50   ~ 0
-RSET
-Text Label 8600 3550 0    50   ~ 0
-IICRST
-Wire Wire Line
-	8400 3350 9150 3350
-NoConn ~ 8400 3750
-Wire Wire Line
-	9350 3450 9450 3450
-Wire Wire Line
-	9350 4250 9150 4250
-Wire Wire Line
-	9350 4150 9350 4250
-Connection ~ 9150 4250
 $Comp
 L Device:CP C?
 U 1 1 60FF4291
@@ -1272,74 +1019,6 @@ Wire Wire Line
 	9400 1600 8700 1600
 Connection ~ 8700 1600
 Wire Wire Line
-	8700 4250 8550 4250
-Connection ~ 8550 4250
-$Comp
-L power:GND #PWR?
-U 1 1 60FF429E
-P 8700 4650
-AR Path="/5D8219F0/60FF429E" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/60FF429E" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/60FF429E" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/60FF429E" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/60FF429E" Ref="#PWR?"  Part="1" 
-AR Path="/60144166/60FF429E" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 8700 4400 50  0001 C CNN
-F 1 "GND" H 8700 4500 50  0000 C CNN
-F 2 "" H 8700 4650 50  0001 C CNN
-F 3 "" H 8700 4650 50  0001 C CNN
-	1    8700 4650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 4650 8700 4550
-$Comp
-L power:VCC #PWR?
-U 1 1 60FF42A5
-P 8550 4650
-AR Path="/5D8219F0/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/5D3D0542/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/60FF42A5" Ref="#PWR?"  Part="1" 
-AR Path="/60144166/60FF42A5" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 8550 4500 50  0001 C CNN
-F 1 "VCC" H 8550 4800 50  0000 C CNN
-F 2 "" H 8550 4650 50  0001 C CNN
-F 3 "" H 8550 4650 50  0001 C CNN
-	1    8550 4650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8550 4650 8550 4550
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 60FF42AE
-P 8550 4400
-F 0 "JP3" H 8550 4605 50  0000 C CNN
-F 1 "Right" H 8550 4514 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8550 4400 50  0001 C CNN
-F 3 "~" H 8550 4400 50  0001 C CNN
-F 4 "0" H 8550 4400 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 8550 4400 50  0001 C CNN "Manufacturer_Part_Number"
-	1    8550 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 60FF42B6
-P 8700 4400
-F 0 "JP4" H 8700 4605 50  0000 C CNN
-F 1 "Left" H 8700 4514 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8700 4400 50  0001 C CNN
-F 3 "~" H 8700 4400 50  0001 C CNN
-F 4 "0" H 8700 4400 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 8700 4400 50  0001 C CNN "Manufacturer_Part_Number"
-	1    8700 4400
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
 	7050 4050 7200 4050
 Wire Wire Line
 	7600 1600 8100 1600
@@ -1347,4 +1026,127 @@ Wire Wire Line
 	7700 1950 8100 1950
 Text GLabel 7050 4050 0    50   Input ~ 0
 CSB12
+Text Notes 4250 5300 0    50   ~ 0
+Sync Master
+Text Notes 8500 5150 0    50   ~ 0
+Sync Slave
+Text GLabel 4050 1450 2    50   Input ~ 0
+PWR
+Text GLabel 4200 2950 1    50   Input ~ 0
+V_IO
+Text GLabel 8500 2900 1    50   Input ~ 0
+V_IO
+Text GLabel 8500 3950 2    50   Input ~ 0
+PWR
+Wire Wire Line
+	8500 3950 8400 3950
+Wire Wire Line
+	3800 1650 3800 1450
+Wire Wire Line
+	3800 1450 4050 1450
+Text GLabel 8350 1400 2    50   Input ~ 0
+PWR
+Wire Wire Line
+	8100 1600 8100 1400
+Wire Wire Line
+	8100 1400 8350 1400
+Text GLabel 9100 3450 2    50   Input ~ 0
+SDB
+Wire Wire Line
+	8850 2950 9450 2950
+NoConn ~ 8400 3350
+Wire Wire Line
+	8950 4150 8950 4300
+Text GLabel 4200 3800 2    50   Input ~ 0
+RGB_SYNC
+Wire Wire Line
+	4200 3800 4100 3800
+Text GLabel 9100 3750 2    50   Input ~ 0
+RGB_SYNC
+Wire Wire Line
+	9100 3750 8400 3750
+Text GLabel 5150 3600 2    50   Input ~ 0
+IICRST
+Wire Wire Line
+	5150 3600 4700 3600
+Connection ~ 4700 3600
+Wire Wire Line
+	8400 3450 9100 3450
+Text GLabel 9100 3550 2    50   Input ~ 0
+IICRST
+Wire Wire Line
+	5100 3900 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	4100 3400 5100 3400
+Wire Wire Line
+	5100 4200 5100 4300
+Wire Wire Line
+	5100 4300 4900 4300
+Connection ~ 4900 4300
+Wire Wire Line
+	4550 3000 5150 3000
+Text GLabel 6700 2250 2    50   Input ~ 0
+I2C-
+Text GLabel 6700 2150 2    50   Input ~ 0
+I2C+
+$Comp
+L Device:R R?
+U 1 1 60E0DB3F
+P 6400 2150
+AR Path="/5D8219F0/60E0DB3F" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/60E0DB3F" Ref="R?"  Part="1" 
+AR Path="/5D696341/60E0DB3F" Ref="R?"  Part="1" 
+AR Path="/5E1CFEC6/60E0DB3F" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/60E0DB3F" Ref="R?"  Part="1" 
+AR Path="/60144166/60E0DB3F" Ref="R6"  Part="1" 
+F 0 "R6" V 6480 2150 50  0000 C CNN
+F 1 "1k" V 6400 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 2150 50  0001 C CNN
+F 3 "" H 6400 2150 50  0001 C CNN
+F 4 "1" H 6400 2150 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 6400 2150 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF1003V" H 6400 2150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF1003V" H 6400 2150 50  0001 C CNN "Mouser Part Number"
+	1    6400 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60E0E182
+P 6400 2250
+AR Path="/5D8219F0/60E0E182" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/60E0E182" Ref="R?"  Part="1" 
+AR Path="/5D696341/60E0E182" Ref="R?"  Part="1" 
+AR Path="/5E1CFEC6/60E0E182" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/60E0E182" Ref="R?"  Part="1" 
+AR Path="/60144166/60E0E182" Ref="R7"  Part="1" 
+F 0 "R7" V 6480 2250 50  0000 C CNN
+F 1 "1k" V 6400 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 2250 50  0001 C CNN
+F 3 "" H 6400 2250 50  0001 C CNN
+F 4 "1" H 6400 2250 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 6400 2250 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF1003V" H 6400 2250 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF1003V" H 6400 2250 50  0001 C CNN "Mouser Part Number"
+	1    6400 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2150 6550 2150
+Wire Wire Line
+	6550 2250 6700 2250
+Text GLabel 5950 2200 1    50   Input ~ 0
+V_IO
+Wire Wire Line
+	5950 2200 6150 2200
+Wire Wire Line
+	6150 2200 6150 2150
+Wire Wire Line
+	6150 2150 6250 2150
+Wire Wire Line
+	6250 2250 6150 2250
+Wire Wire Line
+	6150 2250 6150 2200
+Connection ~ 6150 2200
 $EndSCHEMATC

@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name yurei)(type KiCad)(uri ${KIPRJMOD}/yurei.pretty)(options "")(descr ""))
+  (lib (name nrfmicro)(type KiCad)(uri "D:/users/main/Dokuments/KiCad Designs/external git/nrfmicro/hardware/nrfmicro.pretty")(options "")(descr ""))
 )
